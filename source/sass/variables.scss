@@ -1,6 +1,14 @@
 // Colors
 // ---------------------------------
 
+$color-sapphire:                    #102654;
+$color-egyptian-blue:               #103aae;
+$color-ghost-white:                 #f8f9fc;
+$color-torch-red:                   #ed0233;
+$color-black-russian:               #030a1a;
+$color-torch-red-error:             #ff121f;
+
+
 // Default
 
 $color-default-black:               #000000;
@@ -11,11 +19,14 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+// $color-torch-red:                   #ff1553;
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$crimson-to-cobalt:                 linear-gradient(#d10a42 100%, #0041ca 100%);
+$torchred-to-cobalt:                linear-gradient(#ed0233 100%, #0041ca 100%);
+$darkcerulean-to-venetianred:       conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
 // Typography
 // ---------------------------------
@@ -23,11 +34,86 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
+$fz-small:                          12px;
+$fz-xsmall:                         14px;
+$fz-xxsmall:                        16px;
+$fz-xxxsmall:                       18px;
+$fz-medium:                         20px;
+$fz-xmedium:                        22px;
+$fz-xxmedium:                       24px;
+$fz-xxxmedium:                      26px;
+$fz-xxxlmedium:                     28px;
+$fz-big:                            32px;
+$fz-xbig:                           40px;
+$fz-xxbig:                          42px;
+$fz-xxxbig:                         46px;
+$fz-xxxlbig:                        48px;
+$fz-large:                          54px;
+$fz-xlarge:                         60px;
+$fz-xllarge:                        62px;
+$fz-xxlarge:                        64px;
+$fz-xxllarge:                       70px;
+$fz-xxxlarge:                       72px;
+$fz-xxxllarge:                      76px;
+$fz-huge:                           82px;
+$fz-xhuge:                          86px;
+$fz-xxhuge:                         92px;
+$fz-xxlhuge:                        100px;
+$fz-xxxlhuge:                       110px;
+
+// Line height
+// ---------------------------------
+
+$lh-small:                          12px;
+$lh-xsmall:                         14px;
+$lh-xxsmall:                        16px;
+$lh-xxxsmall:                       18px;
+$lh-medium:                         20px;
+$lh-xlmedium:                       21px;
+$lh-xmedium:                        22px;
+$lh-xxmedium:                       24px;
+$lh-xxxmedium:                      26px;
+$lh-xxxlmedium:                     29px;
+$lh-big:                            32px;
+$lh-xsbig:                          34px;
+$lh-xbig:                           40px;
+$lh-xxbig:                          42px;
+$lh-xxxbig:                         46px;
+$lh-xxxlbig:                        48px;
+$lh-large:                          54px;
+$lh-xlarge:                         58px;
+$lh-xllarge:                        60px;
+$lh-xxlarge:                        64px;
+$lh-xxllarge:                       70px;
+$lh-xxxlarge:                       72px;
+$lh-xxxllarge:                      76px;
+$lh-huge:                           82px;
+$lh-xhuge:                          86px;
+$lh-xxhuge:                         92px;
+$lh-xxlhuge:                        100px;
+$lh-xxxlhuge:                       110px;
+
+// Weight
+// ---------------------------------
+$fw-normal:                          400;
+$fw-light:                           300;
+$fw-semi-bold:                       600;
+$fw-bold:                            700;
+
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
+$ff-alumni:                         "Alumni Sans", "Arial", sans-serif;
+$ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
+
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+// Letter spacing
+
+$ls-light: 0.02em;
+$ls-medium: 0.03em;
+$ls-interium: 0.05em;
 
 // Animation
 // ---------------------------------
@@ -47,7 +133,9 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
+$vp-1366:                           1366px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 

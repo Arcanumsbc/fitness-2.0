@@ -1,0 +1,54 @@
+.header-contact {
+  padding-right: 1px;
+  margin-left: 20px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+
+  }
+
+  @include vp-767 {
+    // max-height: 80px;
+    padding-right: 1px;
+    padding-left: 0;
+  }
+}
+
+.header-contact a {
+  display: block;
+  font-weight: $fw-semi-bold;
+  font-size: $fz-xxxmedium;
+  font-family: $ff-alumni;
+  line-height: $lh-big;
+  letter-spacing: $ls-medium;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color $trans-default;
+
+  &:hover,
+  &:focus {
+    color: $color-black-russian;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include vp-1199 {
+    font-weight: $fw-bold;
+    font-size: $fz-xxmedium;
+    line-height: $lh-medium;
+    letter-spacing: $ls-light;
+  }
+
+  @include vp-767 {
+    font-weight: $fw-semi-bold;
+    font-size: $fz-medium;
+    line-height: $lh-xxsmall;
+    letter-spacing: $ls-light;
+  }
+}

@@ -1,0 +1,128 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    margin-right: 2px;
+    padding-top: 60px;
+    padding-bottom: 23px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: 1px;
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+}
+
+.header-content__title {
+  margin: 0;
+  padding: 0;
+  margin-right: 38px;
+  margin-top: 15px;
+  font-weight: $fw-semi-bold;
+  font-size: $fz-xxhuge;
+  font-family: $ff-alumni;
+  line-height: $lh-xxxlhuge;
+  letter-spacing: $ls-interium;
+  text-transform: uppercase;
+  text-align: right;
+  color: $color-default-white;
+  -webkit-text-stroke: 2px;
+  order: 2;
+
+  @include vp-1199 {
+    font-size: $fz-xxxlarge;
+    line-height: $lh-xhuge;
+    margin-right: 25px;
+    text-transform: none;
+    margin-top: 10px;
+  }
+
+  @include vp-767 {
+    text-align: right;
+    margin-top: 2px;
+    margin-right: 0;
+  }
+}
+
+.header-content__subtitle {
+  margin: 0;
+  margin-top: 96px;
+  margin-right: 88px;
+  font-weight: $fw-semi-bold;
+  font-size: $fz-xxxlbig;
+  font-family: $ff-alumni;
+  line-height: $lh-xlarge;
+  text-transform: none;
+  color: $color-default-white;
+  text-align: right;
+  letter-spacing: $ls-medium;
+  order: 1;
+  -webkit-text-stroke: 0;
+
+  @include vp-1199 {
+    margin-top: 0;
+    margin-right: 25px;
+    font-size: $lh-xsbig;
+    line-height: $lh-xbig;
+  }
+
+  @include vp-767 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: $fz-xxxlmedium;
+    margin-right: 2px;
+  }
+}
+
+.header-content__btn {
+  display: block;
+  margin: 0;
+  margin-top: 52px;
+  margin-left: auto;
+  margin-right: 38px;
+  padding: 18px 53px;
+  font-family: $ff-roboto;
+  font-size: $fz-small;
+  font-weight: $fw-bold;
+  line-height: $lh-xsmall;
+  letter-spacing: $ls-interium;
+  color: $color-default-white;
+  text-align: center;
+  background-color: transparent;
+  border: 4px solid $color-default-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  order: 3;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    border-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  &:active {
+    color: $color-sapphire;
+  }
+
+  @include vp-1199 {
+    margin-top: 38px;
+    margin-right: 22px;
+    font-size: $fz-small;
+    line-height: $lh-xsmall;
+    padding: 18px 32px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    max-width: 300px;
+    margin-top: 25px;
+    margin-bottom: 58px;
+    margin-left: -1px;
+  }
+}
