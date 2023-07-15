@@ -1,17 +1,13 @@
 .container {
   width: 100%;
   min-width: 320px;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
 
   @include vp-1365 {
     padding: 0 103px;
   }
-
-  // @include vp-1279 {
-  //   padding: 0 50px;
-  // }
 
   @include vp-1199 {
     padding: 0 45px;

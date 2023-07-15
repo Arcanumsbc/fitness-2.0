@@ -1,0 +1,49 @@
+.intro {
+  padding: 120px 0 235px;
+
+  @include vp-1199 {
+    padding: 100px 0 183px;
+  }
+
+  @include vp-767 {
+    padding: 65px 0;
+  }
+}
+
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1366px;
+  padding: 0 103px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding: 0 45px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.intro__content {
+  flex: 1 1;
+  margin-top: 40px;
+  margin-right: 85px;
+  margin-left: 60px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin: 0;
+  }
+}

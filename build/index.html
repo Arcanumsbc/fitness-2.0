@@ -7,12 +7,13 @@
     <meta name="description" content="Описание проекта">
     <title>SuperGym | Фитнес центр</title>
 
-    <link rel="preload" href="./fonts/AlumniSans-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/AlumniSans-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/" as="font" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -76,18 +77,109 @@
               src="./img/poster/poster-desk.png" alt="" width="500" height="556" loading="lazy">
             </picture>
           </div>
-
         </div>
       </header>
+
       <main>
         <section class="intro">
-          <div class="container">
+          <div class="intro__inner">
+            <div class="intro__content content">
+              <h2 class="content__title">
+                Тренажерный зал
+              </h2>
+              <h3 class="content__subtitle">
+                Просторный зал площадью 900 кв/м
+              </h3>
+              <p class="content__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p class="content__text content__text-desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+
+            <div class="intro__media media">
+              <div class="media__content">
+                <div class="media__photo">
+                  <picture>
+                    <source type="image/webp" srcset="
+                    ./img/intro/intro-desk.webp 660w,
+                    ./img/intro/intro-desk@2x.webp 1320w,
+                    ./img/intro/intro-tablet.webp 678w,
+                    ./img/intro/intro-tablet@2x.webp 1356w
+                    ./img/intro/intro-mobile.webp 320w,
+                    ./img/intro/intro-mobile@2x.webp 640w"
+                    sizes="(min-width: 1200px) 660px,
+                    ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
+                    (min-width: 768px) 678px,
+                    ((min-width: 768px) and (min-resolution: 2dppx)) 1356px,
+                    (min-width: 767px) 320px,
+                    ((min-width: 767px) and (min-resolution: 2dppx)) 640px">
+
+                    <img srcset="
+                    ./img/intro/intro-desk.jpg 660w,
+                    ./img/intro/intro-desk@2x.jpg 1320w,
+                    ./img/intro/intro-tablet.jpg 678w,
+                    ./img/intro/intro-tablet@2x.jpg 1356w,
+                    ./img/intro/intro-mobile.jpg 320w,
+                    ./img/intro/intro-mobile@2x.jpg 640w"
+                    sizes="(min-width: 1200px) 660px,
+                    ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
+                    (min-width: 768px) 678px,
+                    ((min-width: 768px) and (min-resolution: 2dppx)) 1356px,
+                    (min-width: 767px) 320px,
+                    ((min-width: 767px) and (min-resolution: 2dppx)) 640px"
+                    src="./img/intro/intro-desk.jpg" alt="Лучший зал в нашем городе" width="660" height="401" loading="lazy">
+                  </picture>
+                </div>
+
+                <div class="media__video">
+                  <div class="media__wrapper">
+                    <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" rel="noopener noreferrer">
+                      <picture>
+                        <source type="image/webp" srcset="
+                          ./img/intro/video-desk.webp 364w,
+                          ./img/intro/video-desk@2x.webp 728w,
+                          ./img/intro/video-tablet.webp 266w,
+                          ./img/intro/video-tablet@2x.webp 532w,
+                          ./img/intro/video-mobile.webp 320w,
+                          ./img/intro/video-mobile@2x.webp 640w"
+                          sizes="(min-width: 1200px) 364px,
+                          ((min-width: 1200px) and (min-resolution: 2dppx)) 728px,
+                          (min-width: 768px) 266px,
+                          ((min-width: 768px) and (min-resolution: 2dppx)) 532px,
+                          (min-width: 767px) 320px,
+                          ((min-width: 767px) and (min-resolution: 2dppx)) 640px">
+
+                          <img srcset="
+                          ./img/intro/video-desk.jpg 364w,
+                          ./img/intro/video-desk@2x.jpg 728w,
+                          ./img/intro/video-tablet.jpg 266w,
+                          ./img/intro/video-tablet@2x.jpg 532w,
+                          ./img/intro/video-mobile.jpg 320w,
+                          ./img/intro/video-mobile@2x.jpg 640w"
+                          sizes="(min-width: 1200px) 364px,
+                          ((min-width: 1200px) and (min-resolution: 2dppx)) 728px,
+                          (min-width: 768px) 266px,
+                          ((min-width: 768px) and (min-resolution: 2dppx)) 532px,
+                          (min-width: 767px) 320px,
+                          ((min-width: 767px) and (min-resolution: 2dppx)) 640px"
+                          src="./img/intro/video-desk.jpg" alt="Видео-презентация зала" width="364" height="228" loading="lazy">
+                      </picture>
+                    </a>
+                    <button type="button" aria-label="play">
+                      <svg width="12" height="12" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#icon-play"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
             <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
+          </div> -->
         </section>
       </main>
       <footer>
