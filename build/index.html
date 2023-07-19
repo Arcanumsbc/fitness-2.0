@@ -1,222 +1,362 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>SuperGym | Фитнес центр</title>
 
-    <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="../fonts/AlumniSans-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="../fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="../fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/" as="font" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>SuperGym | Фитнес центр</title>
 
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <div class="container main-header__inner">
-          <h1 class="visually-hidden">Supergym Фитнес центр в Омске</h1>
-          <a class="main-header__logo header-logo" href="#">
-            <svg width="119" height="23" aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#logo"></use>
-            </svg>
-          </a>
+  <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/AlumniSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/" as="font" crossorigin="anonymous">
 
-          <div class="main-header__contact header-contact">
-            <a href="tel:88005555555" aria-label="Позвонить нам">8-800-555-55-55</a>
-          </div>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
 
-          <div class="main-header__content header-content">
-            <h2 class="header-content__title">Фитнес центр</h2>
-            <p class="header-content__subtitle">омск</p>
-            <a class="header-content__btn disabled" href="#">Купить абонемент</a>
-          </div>
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="container main-header__inner">
+        <h1 class="visually-hidden">Supergym Фитнес центр в Омске</h1>
+        <a class="main-header__logo header-logo" href="#">
+          <svg width="119" height="23" aria-hidden="true">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
 
-          <div class="main-header__options header-options">
-            <ul class="header-options__list">
-              <li class="header-options__item">
-                <a class="header-options__link" href="#">Тренажёрный зал</a>
-              </li>
-              <li class="header-options__item">
-                <a class="header-options__link" href="#">Групповые занятия</a>
-              </li>
-              <li class="header-options__item">
-                <a class="header-options__link" href="#">Кардио-зона</a>
-              </li>
-            </ul>
-          </div>
+        <div class="main-header__contact header-contact">
+          <a href="tel:88005555555" aria-label="Позвонить нам">8-800-555-55-55</a>
+        </div>
 
-          <div class="main-header__poster header-poster">
-            <picture>
-              <source type="image/webp" srcset="
+        <div class="main-header__content header-content">
+          <h2>Фитнес центр</h2>
+          <p>омск</p>
+          <a href="#abonements">Купить абонемент</a>
+        </div>
+
+        <div class="main-header__options header-options">
+          <ul>
+            <li>
+              <a href="#intro">Тренажёрный зал</a>
+            </li>
+            <li>
+              <a href="#intro">Групповые занятия</a>
+            </li>
+            <li>
+              <a href="#intro">Кардио-зона</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-header__poster header-poster">
+          <picture>
+            <source type="image/webp" srcset="
               ./img/poster/poster-desk.webp 500w,
               ./img/poster/poster-desk@2x.webp 1000w,
               ./img/poster/poster-tablet.webp 324w,
-              ./img/poster/poster-tablet@2x.webp 648w"
-              sizes="(min-width: 1200px) 500px,
+              ./img/poster/poster-tablet@2x.webp 648w" sizes="(min-width: 1200px) 500px,
               ((min-width: 1200px) and (min-resolution: 2dppx)) 1000px,
               (min-width: 768px) 324px,
               ((min-width: 768px) and (min-resolution: 2dppx)) 648px">
 
-              <img class="header-poster__image" srcset="
+            <img class="header-poster__image" srcset="
               ./img/poster/poster-desk.png 500w,
               ./img/poster/poster-desk@2x.png 1000w,
               ./img/poster/poster-tablet.png 324w,
-              ./img/poster/poster-tablet@2x.png 648w,"
-              sizes="
+              ./img/poster/poster-tablet@2x.png 648w," sizes="
               (min-width: 1200px) 500px,
               ((min-width: 1200px) and (min-resolution: 2dppx)) 1000px,
               (min-width: 768px) 324px,
-              ((min-width: 768px) and (min-resolution: 2dppx)) 648px"
-              src="./img/poster/poster-desk.png" alt="" width="500" height="556" loading="lazy">
-            </picture>
-          </div>
+              ((min-width: 768px) and (min-resolution: 2dppx)) 648px" src="./img/poster/poster-desk.png" alt=""
+              width="500" height="556" loading="lazy">
+          </picture>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <section class="intro">
-          <div class="intro__inner">
-            <div class="intro__content content">
-              <h2 class="content__title">
-                Тренажерный зал
-              </h2>
-              <h3 class="content__subtitle">
-                Просторный зал площадью 900 кв/м
-              </h3>
-              <p class="content__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p class="content__text content__text-desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+    <main>
+      <section class="intro" id="intro">
+        <div class="intro__inner">
+          <div class="intro__content content">
+            <h2>
+              Тренажерный зал
+            </h2>
+            <h3>
+              Просторный зал площадью 900 кв/м
+            </h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
+              тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <div class="content__text-desktop">
+              <p>В зале расположены отдельная зона для Crossfit и кардио-зона
+                с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых
+                занятий.</p>
             </div>
+          </div>
 
-            <div class="intro__media media">
-              <div class="media__content">
-                <div class="media__photo">
-                  <picture>
-                    <source type="image/webp" srcset="
+          <div class="intro__media media">
+            <div class="media__content">
+              <div class="media__photo">
+                <picture>
+                  <source type="image/webp" srcset="
                     ./img/intro/intro-desk.webp 660w,
                     ./img/intro/intro-desk@2x.webp 1320w,
                     ./img/intro/intro-tablet.webp 678w,
                     ./img/intro/intro-tablet@2x.webp 1356w
                     ./img/intro/intro-mobile.webp 320w,
-                    ./img/intro/intro-mobile@2x.webp 640w"
-                    sizes="(min-width: 1200px) 660px,
+                    ./img/intro/intro-mobile@2x.webp 640w" sizes="(min-width: 1200px) 660px,
                     ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
                     (min-width: 768px) 678px,
                     ((min-width: 768px) and (min-resolution: 2dppx)) 1356px,
                     (min-width: 767px) 320px,
                     ((min-width: 767px) and (min-resolution: 2dppx)) 640px">
 
-                    <img srcset="
+                  <img srcset="
                     ./img/intro/intro-desk.jpg 660w,
                     ./img/intro/intro-desk@2x.jpg 1320w,
                     ./img/intro/intro-tablet.jpg 678w,
                     ./img/intro/intro-tablet@2x.jpg 1356w,
                     ./img/intro/intro-mobile.jpg 320w,
-                    ./img/intro/intro-mobile@2x.jpg 640w"
-                    sizes="(min-width: 1200px) 660px,
+                    ./img/intro/intro-mobile@2x.jpg 640w" sizes="(min-width: 1200px) 660px,
                     ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
                     (min-width: 768px) 678px,
                     ((min-width: 768px) and (min-resolution: 2dppx)) 1356px,
                     (min-width: 767px) 320px,
-                    ((min-width: 767px) and (min-resolution: 2dppx)) 640px"
-                    src="./img/intro/intro-desk.jpg" alt="Лучший зал в нашем городе" width="660" height="401" loading="lazy">
-                  </picture>
-                </div>
+                    ((min-width: 767px) and (min-resolution: 2dppx)) 640px" src="./img/intro/intro-desk.jpg"
+                    alt="Лучший зал в нашем городе" width="660" height="401" loading="lazy">
+                </picture>
+              </div>
 
-                <div class="media__video">
-                  <div class="media__wrapper">
-                    <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" rel="noopener noreferrer">
-                      <picture>
-                        <source type="image/webp" srcset="
+              <div class="media__video">
+                <div class="media__wrapper">
+                  <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                      <source type="image/webp" srcset="
                           ./img/intro/video-desk.webp 364w,
                           ./img/intro/video-desk@2x.webp 728w,
                           ./img/intro/video-tablet.webp 266w,
                           ./img/intro/video-tablet@2x.webp 532w,
                           ./img/intro/video-mobile.webp 320w,
-                          ./img/intro/video-mobile@2x.webp 640w"
-                          sizes="(min-width: 1200px) 364px,
+                          ./img/intro/video-mobile@2x.webp 640w" sizes="(min-width: 1200px) 364px,
                           ((min-width: 1200px) and (min-resolution: 2dppx)) 728px,
                           (min-width: 768px) 266px,
                           ((min-width: 768px) and (min-resolution: 2dppx)) 532px,
                           (min-width: 767px) 320px,
                           ((min-width: 767px) and (min-resolution: 2dppx)) 640px">
 
-                          <img srcset="
+                      <img srcset="
                           ./img/intro/video-desk.jpg 364w,
                           ./img/intro/video-desk@2x.jpg 728w,
                           ./img/intro/video-tablet.jpg 266w,
                           ./img/intro/video-tablet@2x.jpg 532w,
                           ./img/intro/video-mobile.jpg 320w,
-                          ./img/intro/video-mobile@2x.jpg 640w"
-                          sizes="(min-width: 1200px) 364px,
+                          ./img/intro/video-mobile@2x.jpg 640w" sizes="(min-width: 1200px) 364px,
                           ((min-width: 1200px) and (min-resolution: 2dppx)) 728px,
                           (min-width: 768px) 266px,
                           ((min-width: 768px) and (min-resolution: 2dppx)) 532px,
                           (min-width: 767px) 320px,
-                          ((min-width: 767px) and (min-resolution: 2dppx)) 640px"
-                          src="./img/intro/video-desk.jpg" alt="Видео-презентация зала" width="364" height="228" loading="lazy">
-                      </picture>
-                    </a>
-                    <button type="button" aria-label="play">
-                      <svg width="12" height="12" aria-hidden="true">
-                        <use xlink:href="./img/sprite.svg#icon-play"></use>
-                      </svg>
-                    </button>
-                  </div>
+                          ((min-width: 767px) and (min-resolution: 2dppx)) 640px" src="./img/intro/video-desk.jpg"
+                        alt="Видео-презентация зала" width="364" height="228" loading="lazy">
+                    </picture>
+                  </a>
+                  <button type="button" aria-label="play">
+                    <svg width="12" height="12" aria-hidden="true">
+                      <use xlink:href="./img/sprite.svg#icon-play"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="container">
+        </div>
+        <!-- <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
             <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div> -->
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+      </section>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+      <section class="abonements-tabs" id="abonements" >
+        <div class="container abonements-tabs__container">
+          <h2>Абонементы</h2>
+          <div class="abonements-tabs__tabs">
+            <ul>
+              <li>
+                <button class="abonements-tabs__button" type="button">1 месяц</button>
+              </li>
+              <li>
+                <button class="abonements-tabs__button" type="button">6 месяцев</button>
+              </li>
+              <li>
+                <button class="abonements-tabs__button" type="button">12 месяцев</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="abonements-tabs__content abonements-card">
+            <ul>
+              <li>
+                <h3>С тренером</h3>
+                <p>12 занятий</p>
+                <div class="abonements-card__data-price">
+                  <span data-price="5000">5000</span>
+                  <svg width="30" height="42" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#icon-ruble"></use>
+                  </svg>
+                </div>
+                <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <p>с 8:00 до 17:00</p>
+                <div class="abonements-card__data-price">
+                  <span data-price="1700">1700</span>
+                  <svg width="30" height="42" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#icon-ruble"></use>
+                  </svg>
+                </div>
+                <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <p >с 8:00 до 22:00</p>
+                <div class="abonements-card__data-price">
+                  <span data-price="2700">2700</span>
+                  <svg width="30" height="42" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#icon-ruble"></use>
+                  </svg>
+                </div>
+                <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="abonements-tabs__decoration">
+            <picture>
+              <source type="image/webp" srcset="
+                ./img/tabs/tabs-decor-desk.webp 287w,
+                ./img/tabs/tabs-decor-desk@2x.webp 574w,
+                ./img/tabs/tabs-decor-tablet.webp 347w,
+                ./img/tabs/tabs-decor-tablet@2x.webp 694w" sizes="
+                (min-width: 1200px) 287px,
+                ((min-width: 1200px) and (min-resolution: 2dppx)) 574px,
+                (min-width: 768px) 347px,
+                ((min-width: 768px) and (min-resolution: 2dppx)) 694px">
+              <img srcset="
+                ./img/tabs/tabs-decor-desk.png 287px,
+                ./img/tabs/tabs-decor-desk@2x.png 574px,
+                ./img/tabs/tabs-decor-tablet.png 347px,
+                ./img/tabs/tabs-decor-tablet@2x.png 694px" sizes="
+                (min-width: 1200px) 287px,
+                ((min-width: 1200px) and (min-resolution: 2dppx)) 574px,
+                (min-width: 768px) 347px,
+                ((min-width: 768px) and (min-resolution: 2dppx)) 694px" src="./img/tabs/tabs-decor-desk.png"
+                width="287px" height="494" loading="lazy" alt="Спортивыне блины для штанги.">
+            </picture>
+          </div>
         </div>
+      </section>
+
+      <section class="events">
+        <div class="events__wrapper">
+          <div class="events__content">
+            <h2>Super Games</h2>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <dl>
+              <div>
+                <dt>Дата</dt>
+                <dd>7 <span>Марта <br> 2019</span></dd>
+              </div>
+
+              <div>
+                <dt>Время</dt>
+                <dd>12:00</dd>
+              </div>
+            </dl>
+            <a href="#" target="_blank">Заполнить заявку</a>
+          </div>
+        </div>
+
+        <div class="events__poster">
+          <picture>
+            <source type="image/webp" srcset="
+              ./img/events/poster-desk.webp 660w,
+              ./img/events/poster-desk@2x.webp 1320w,
+              ./img/events/poster-tablet.webp 386w,
+              ./img/events/poster-tablet@2x.webp 772w,
+              ./img/events/poster-mobile.webp 290w,
+              ./img/events/poster-mobile@2x.webp 580w"
+              sizes="
+              (min-width: 1200px) 660px,
+              ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
+              (min-width: 768px) 386px,
+              ((min-width: 768px) and (min-resolution: 2dppx)) 772px
+              (min-width: 767px) 290px,
+              ((min-width: 767px) and (min-resolution: 2dppx)) 580px">
+              <img srcset="
+              ./img/events/poster-desk.jpg 660w,
+              ./img/events/poster-desk@2x.jpg 1320w,
+              ./img/events/poster-tablet.jpg 386w,
+              ./img/events/poster-tablet@2x.jpg 772w,
+              ./img/events/poster-mobile.jpg 290w,
+              ./img/events/poster-mobile@2x.jpg 580w"
+              sizes="
+              (min-width: 1200px) 660px,
+              ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
+              (min-width: 768px) 386px,
+              ((min-width: 768px) and (min-resolution: 2dppx)) 772px
+              (min-width: 767px) 290px,
+              ((min-width: 767px) and (min-resolution: 2dppx)) 580px"
+              src="./img/events/poster-desk.jpg" width="660" height="500" loading="lazy" alt="Постер мероприятия.">
+          </picture>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

@@ -10,7 +10,7 @@
   }
 }
 
-.content__title {
+.content h2 {
   font-family: $ff-alumni;
   font-weight: $fw-semi-bold;
   font-size: $fz-xxxlbig;
@@ -32,7 +32,7 @@
   }
 }
 
-.content__subtitle {
+.content h3 {
   font-family: $ff-roboto;
   font-weight: $fw-normal;
   font-size: $fz-xxxsmall;
@@ -50,7 +50,7 @@
   }
 }
 
-.content__text {
+.content p {
   font-family: $ff-roboto;
   font-weight: $fw-light;
   font-size: $fz-xxsmall;
