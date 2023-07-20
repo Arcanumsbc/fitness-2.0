@@ -186,8 +186,8 @@
 
 .coaches__item:hover p {
   display: block;
+  user-select: none;
 }
-
 
 .coaches img {
   position: absolute;

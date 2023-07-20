@@ -10,6 +10,9 @@
 
   @include vp-767 {
     padding: 70px 15px 63px;
+  }
+
+  @media (max-width: 610px) {
     flex-direction: column;
   }
 }
@@ -17,27 +20,40 @@
 .events__wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  min-width: 292px;
+  background-color: $color-torch-red;
 
   @include vp-767 {
     background-color: $color-torch-red;
     justify-content: center;
+    padding: 0;
+  }
+
+  @media (max-width: 610px) {
+    width: 100%;
   }
 }
 
 .events__content {
+  position: relative;
   display: grid;
   grid-template-columns: min-content auto min-content;
   grid-template-rows: repeat(4, min-content);
   padding: 81px 78px 80px 79px;
   margin: 0;
+  min-height: 500px;
   background-color: $color-torch-red;
 
   @include vp-1199 {
     padding: 46px 45px;
+    max-width: 292px;
+    min-height: 292px;
   }
 
   @include vp-767 {
     padding: 45px 44px 51px;
+    min-width: 292px;
   }
 }
 
@@ -199,20 +215,22 @@
   @include vp-1199 {
     min-height: 292px;
   }
+
+  @include vp-767 {
+    align-self: stretch;
+    min-width: 292px;
+    min-height: 292px;
+  }
 }
 
 .events__poster img {
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  display: block;
   background-color: $color-dark-cerulean;
   object-fit: cover;
   object-position: center;
   top: 0;
   left: 0;
-
-  @include vp-767 {
-    height: 117%;
-  }
 }

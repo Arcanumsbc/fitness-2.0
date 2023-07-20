@@ -2,18 +2,22 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>SuperGym | Фитнес центр</title>
 
-  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/120.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/512.png">
+
+  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -36,7 +40,7 @@
         <div class="main-header__content header-content">
           <h2>Фитнес центр</h2>
           <p>омск</p>
-          <a href="#abonements">Купить абонемент</a>
+          <a href="#abonemets">Купить абонемент</a>
         </div>
 
         <div class="main-header__options header-options">
@@ -53,27 +57,18 @@
           </ul>
         </div>
 
-        <div class="main-header__poster header-poster">
+        <div class="main-header__hero header-hero">
           <picture>
-            <source type="image/webp" srcset="
-              ./img/poster/poster-desk.webp 500w,
-              ./img/poster/poster-desk@2x.webp 1000w,
-              ./img/poster/poster-tablet.webp 324w,
-              ./img/poster/poster-tablet@2x.webp 648w" sizes="(min-width: 1200px) 500px,
-              ((min-width: 1200px) and (min-resolution: 2dppx)) 1000px,
-              (min-width: 768px) 324px,
-              ((min-width: 768px) and (min-resolution: 2dppx)) 648px">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/hero/hero-desk.webp 1x, ./img/hero/hero-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
 
-            <img class="header-poster__image" srcset="
-              ./img/poster/poster-desk.png 500w,
-              ./img/poster/poster-desk@2x.png 1000w,
-              ./img/poster/poster-tablet.png 324w,
-              ./img/poster/poster-tablet@2x.png 648w," sizes="
-              (min-width: 1200px) 500px,
-              ((min-width: 1200px) and (min-resolution: 2dppx)) 1000px,
-              (min-width: 768px) 324px,
-              ((min-width: 768px) and (min-resolution: 2dppx)) 648px" src="./img/poster/poster-desk.png" alt=""
-              width="500" height="556" loading="lazy">
+            <source media="(min-width: 1200px)"
+              srcset="./img/hero/hero-desk.png 1x, ./img/hero/hero-desk@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/hero/hero-tablet.png 1x, ./img/hero/hero-tablet@2x.png 2x">
+            <img src="./img/hero/hero-desk.png" width="500" height="556" loading="lazy" alt="Лучший спортсмен">
           </picture>
         </div>
       </div>
@@ -89,13 +84,10 @@
             <h3>
               Просторный зал площадью 900 кв/м
             </h3>
-            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-              тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
             </p>
             <div class="content__text-desktop">
-              <p>В зале расположены отдельная зона для Crossfit и кардио-зона
-                с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых
-                занятий.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit&nbsp;и кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
           </div>
 
@@ -103,32 +95,21 @@
             <div class="media__content">
               <div class="media__photo">
                 <picture>
-                  <source type="image/webp" srcset="
-                    ./img/intro/intro-desk.webp 660w,
-                    ./img/intro/intro-desk@2x.webp 1320w,
-                    ./img/intro/intro-tablet.webp 678w,
-                    ./img/intro/intro-tablet@2x.webp 1356w
-                    ./img/intro/intro-mobile.webp 320w,
-                    ./img/intro/intro-mobile@2x.webp 640w" sizes="(min-width: 1200px) 660px,
-                    ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
-                    (min-width: 768px) 678px,
-                    ((min-width: 768px) and (min-resolution: 2dppx)) 1356px,
-                    (min-width: 767px) 320px,
-                    ((min-width: 767px) and (min-resolution: 2dppx)) 640px">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="./img/intro/intro-desk.webp 1x, ./img/intro/intro-desk@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="./img/intro/intro-tablet.webp 1x, ./img/intro/intro-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="./img/intro/intro-mobile.webp 1x, ./img/intro/intro-mobile@2x.webp 2x">
 
-                  <img srcset="
-                    ./img/intro/intro-desk.jpg 660w,
-                    ./img/intro/intro-desk@2x.jpg 1320w,
-                    ./img/intro/intro-tablet.jpg 678w,
-                    ./img/intro/intro-tablet@2x.jpg 1356w,
-                    ./img/intro/intro-mobile.jpg 320w,
-                    ./img/intro/intro-mobile@2x.jpg 640w" sizes="(min-width: 1200px) 660px,
-                    ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
-                    (min-width: 768px) 678px,
-                    ((min-width: 768px) and (min-resolution: 2dppx)) 1356px,
-                    (min-width: 767px) 320px,
-                    ((min-width: 767px) and (min-resolution: 2dppx)) 640px" src="./img/intro/intro-desk.jpg"
-                    alt="Лучший зал в нашем городе" width="660" height="401" loading="lazy">
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/intro/intro-desk.jpg 1x, ./img/intro/intro-desk@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/intro/intro-tablet.jpg 1x, ./img/intro/intro-tablet@2x.jpg 2x">
+                  <source media="(min-width: 320px)"
+                    srcset="./img/intro/intro-mobile.jpg 1x, ./img/intro/intro-mobile@2x.jpg 2x">
+                  <img src="./img/intro/intro-desk.jpg" alt="Лучший зал в нашем городе" width="660" height="401"
+                    loading="lazy">
                 </picture>
               </div>
 
@@ -136,32 +117,21 @@
                 <div class="media__wrapper">
                   <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank" rel="noopener noreferrer">
                     <picture>
-                      <source type="image/webp" srcset="
-                          ./img/intro/video-desk.webp 364w,
-                          ./img/intro/video-desk@2x.webp 728w,
-                          ./img/intro/video-tablet.webp 266w,
-                          ./img/intro/video-tablet@2x.webp 532w,
-                          ./img/intro/video-mobile.webp 320w,
-                          ./img/intro/video-mobile@2x.webp 640w" sizes="(min-width: 1200px) 364px,
-                          ((min-width: 1200px) and (min-resolution: 2dppx)) 728px,
-                          (min-width: 768px) 266px,
-                          ((min-width: 768px) and (min-resolution: 2dppx)) 532px,
-                          (min-width: 767px) 320px,
-                          ((min-width: 767px) and (min-resolution: 2dppx)) 640px">
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="./img/intro/video-desk.webp 1x, ./img/intro/video-desk@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="./img/intro/video-tablet.webp 1x, ./img/intro/video-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 320px)"
+                        srcset="./img/intro/video-mobile.webp 1x, ./img/intro/video-mobile@2x.webp 2x">
 
-                      <img srcset="
-                          ./img/intro/video-desk.jpg 364w,
-                          ./img/intro/video-desk@2x.jpg 728w,
-                          ./img/intro/video-tablet.jpg 266w,
-                          ./img/intro/video-tablet@2x.jpg 532w,
-                          ./img/intro/video-mobile.jpg 320w,
-                          ./img/intro/video-mobile@2x.jpg 640w" sizes="(min-width: 1200px) 364px,
-                          ((min-width: 1200px) and (min-resolution: 2dppx)) 728px,
-                          (min-width: 768px) 266px,
-                          ((min-width: 768px) and (min-resolution: 2dppx)) 532px,
-                          (min-width: 767px) 320px,
-                          ((min-width: 767px) and (min-resolution: 2dppx)) 640px" src="./img/intro/video-desk.jpg"
-                        alt="Видео-презентация зала" width="364" height="228" loading="lazy">
+                      <source media="(min-width: 1200px)"
+                        srcset="./img/intro/video-desk.jpg 1x, ./img/intro/video-desk@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="./img/intro/video-tablet.jpg 1x, ./img/intro/video-tablet@2x.jpg 2x">
+                      <source media="(min-width: 320px)"
+                        srcset="./img/intro/video-mobile.jpg 1x, ./img/intro/video-mobile@2x.jpg 2x">
+                      <img src="./img/intro/video-desk.jpg" alt="Видео-презентация зала" width="364" height="228"
+                        loading="lazy">
                     </picture>
                   </a>
                   <button type="button" aria-label="play">
@@ -183,7 +153,7 @@
           </div> -->
       </section>
 
-      <section class="abonements-tabs" id="abonements" >
+      <section class="abonements-tabs" id="abonements">
         <div class="container abonements-tabs__container">
           <h2>Абонементы</h2>
           <div class="abonements-tabs__tabs">
@@ -226,7 +196,7 @@
               </li>
               <li>
                 <h3>Полный день</h3>
-                <p >с 8:00 до 22:00</p>
+                <p>с 8:00 до 22:00</p>
                 <div class="abonements-card__data-price">
                   <span data-price="2700">2700</span>
                   <svg width="30" height="42" aria-hidden="true" focusable="false">
@@ -240,25 +210,17 @@
 
           <div class="abonements-tabs__decoration">
             <picture>
-              <source type="image/webp" srcset="
-                ./img/tabs/tabs-decor-desk.webp 287w,
-                ./img/tabs/tabs-decor-desk@2x.webp 574w,
-                ./img/tabs/tabs-decor-tablet.webp 347w,
-                ./img/tabs/tabs-decor-tablet@2x.webp 694w" sizes="
-                (min-width: 1200px) 287px,
-                ((min-width: 1200px) and (min-resolution: 2dppx)) 574px,
-                (min-width: 768px) 347px,
-                ((min-width: 768px) and (min-resolution: 2dppx)) 694px">
-              <img srcset="
-                ./img/tabs/tabs-decor-desk.png 287px,
-                ./img/tabs/tabs-decor-desk@2x.png 574px,
-                ./img/tabs/tabs-decor-tablet.png 347px,
-                ./img/tabs/tabs-decor-tablet@2x.png 694px" sizes="
-                (min-width: 1200px) 287px,
-                ((min-width: 1200px) and (min-resolution: 2dppx)) 574px,
-                (min-width: 768px) 347px,
-                ((min-width: 768px) and (min-resolution: 2dppx)) 694px" src="./img/tabs/tabs-decor-desk.png"
-                width="287px" height="494" loading="lazy" alt="Спортивыне блины для штанги.">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/tabs/tabs-decor-desk.webp 1x, ./img/tabs/tabs-decor-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/tabs/tabs-decor-tablet.webp 1x, ./img/tabs/tabs-decor-tablet@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="./img/tabs/tabs-decor-desk.png 1x, ./img/tabs/tabs-decor-desk@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/tabs/tabs-decor-tablet.png 1x, ./img/tabs/tabs-decor-tablet@2x.png 2x">
+              <img src="./img/tabs/tabs-decor-desk.png" width="287" height="494" loading="lazy"
+                alt="Спортивыне блины для штанги.">
             </picture>
           </div>
         </div>
@@ -268,7 +230,7 @@
         <div class="events__wrapper">
           <div class="events__content">
             <h2>Super Games</h2>
-            <p>Ежегодные соревнования по CrossFit</p>
+            <p>Ежегодные соревнования по&nbsp;CrossFit</p>
             <dl>
               <div>
                 <dt>Дата</dt>
@@ -286,35 +248,16 @@
 
         <div class="events__poster">
           <picture>
-            <source type="image/webp" srcset="
-              ./img/events/poster-desk.webp 660w,
-              ./img/events/poster-desk@2x.webp 1320w,
-              ./img/events/poster-tablet.webp 386w,
-              ./img/events/poster-tablet@2x.webp 772w,
-              ./img/events/poster-mobile.webp 290w,
-              ./img/events/poster-mobile@2x.webp 580w"
-              sizes="
-              (min-width: 1200px) 660px,
-              ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
-              (min-width: 768px) 386px,
-              ((min-width: 768px) and (min-resolution: 2dppx)) 772px
-              (min-width: 767px) 290px,
-              ((min-width: 767px) and (min-resolution: 2dppx)) 580px">
-              <img srcset="
-              ./img/events/poster-desk.jpg 660w,
-              ./img/events/poster-desk@2x.jpg 1320w,
-              ./img/events/poster-tablet.jpg 386w,
-              ./img/events/poster-tablet@2x.jpg 772w,
-              ./img/events/poster-mobile.jpg 290w,
-              ./img/events/poster-mobile@2x.jpg 580w"
-              sizes="
-              (min-width: 1200px) 660px,
-              ((min-width: 1200px) and (min-resolution: 2dppx)) 1320px,
-              (min-width: 768px) 386px,
-              ((min-width: 768px) and (min-resolution: 2dppx)) 772px
-              (min-width: 767px) 290px,
-              ((min-width: 767px) and (min-resolution: 2dppx)) 580px"
-              src="./img/events/poster-desk.jpg" width="660" height="500" loading="lazy" alt="Постер мероприятия.">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/events/poster-desk.webp 1x, ./img/events/poster-desk@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/events/poster-mobile.webp 1x, ./img/events/poster-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
+              srcset="./img/events/poster-desk.jpg 1x, ./img/events/poster-desk@2x.jpg 2x">
+            <source media="(max-width: 590px)"
+              srcset="./img/events/poster-mobile.jpg 1x, ./img/events/poster-mobile@2x.jpg 2x">
+            <img src="./img/events/poster-desk.jpg" width="660" height="500" loading="lazy" alt="Постер мероприятия.">
           </picture>
         </div>
       </section>
@@ -330,15 +273,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт — 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/pavlova.webp 1x, ./img/coaches/pavlova@2x.webp 2x">
-                  <img src="/img/coaches/pavlova.jpg 1x" srcset="./img/coaches/pavlova@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/pavlova.webp 1x, ./img/coaches/pavlova@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/pavlova.jpg 1x, ./img/coaches/pavlova@2x.jpg 2x">
+                  <img src="./img/coaches/pavlova.jpg" width="260" height="294" loading="lazy" alt="Анна Павлова">
                 </picture>
               </li>
 
@@ -348,15 +292,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт — 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/lavrov.webp 1x, ./img/coaches/lavrov@2x.webp 2x">
-                  <img src="/img/coaches/lavrov.jpg 1x" srcset="./img/coaches/lavrov@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/lavrov.webp 1x, ./img/coaches/lavrov@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/lavrov.jpg 1x, ./img/coaches/lavrov@2x.jpg 2x">
+                  <img src="./img/coaches/lavrov.jpg" width="260" height="294" loading="lazy" alt="Алексей Лавров">
                 </picture>
               </li>
 
@@ -366,15 +311,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт — 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/pashkov.webp 1x, ./img/coaches/pashkov@2x.webp 2x">
-                  <img src="/img/coaches/pashkov.jpg 1x" srcset="./img/coaches/pashkov@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/pashkov.webp 1x, ./img/coaches/pashkov@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/pashkov.jpg 1x, ./img/coaches/pashkov@2x.jpg 2x">
+                  <img src="./img/coaches/pashkov.jpg" width="260" height="294" loading="lazy" alt="Александр Пашков">
                 </picture>
               </li>
 
@@ -384,15 +330,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт — 6 лет</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/ketova.webp 1x, ./img/coaches/ketova@2x.webp 2x">
-                  <img src="/img/coaches/ketova.jpg 1x" srcset="./img/coaches/ketova@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/ketova.webp 1x, ./img/coaches/ketova@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/ketova.jpg 1x, ./img/coaches/ketova@2x.jpg 2x">
+                  <img src="./img/coaches/ketova.jpg" width="260" height="294" loading="lazy" alt="Мария Кетова">
                 </picture>
               </li>
 
@@ -402,15 +349,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 2 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт — 3 года</li>
+                      <li>Certified Level&nbsp;2 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 3&nbsp;года</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/pavlova.webp 1x, ./img/coaches/pavlova@2x.webp 2x">
-                  <img src="/img/coaches/pavlova.jpg 1x" srcset="./img/coaches/pavlova@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/pavlova.webp 1x, ./img/coaches/pavlova@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/pavlova.jpg 1x, ./img/coaches/pavlova@2x.jpg 2x">
+                  <img src="./img/coaches/pavlova.jpg" width="260" height="294" loading="lazy" alt="Ирина Котова">
                 </picture>
               </li>
 
@@ -420,15 +368,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 2 Trainer</li>
-                      <li>Победитель чемпионата России по CrossFit </li>
-                      <li>Опыт — 5 лет</li>
+                      <li>Certified Level&nbsp;2 Trainer</li>
+                      <li>Победитель чемпионата России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 5&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/lavrov.webp 1x, ./img/coaches/lavrov@2x.webp 2x">
-                  <img src="/img/coaches/lavrov.jpg 1x" srcset="./img/coaches/lavrov@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/lavrov.webp 1x, ./img/coaches/lavrov@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/lavrov.jpg 1x, ./img/coaches/lavrov@2x.jpg 2x">
+                  <img src="./img/coaches/lavrov.jpg" width="260" height="294" loading="lazy" alt="Александр Синёв">
                 </picture>
               </li>
 
@@ -438,15 +387,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 4 Trainer</li>
-                      <li>Победитель первенства России по CrossFit </li>
-                      <li>Опыт — 8 лет</li>
+                      <li>Certified Level&nbsp;4 Trainer</li>
+                      <li>Победитель первенства России по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 8&nbsp;лет</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/pashkov.webp 1x, ./img/coaches/pashkov@2x.webp 2x">
-                  <img src="/img/coaches/pashkov.jpg 1x" srcset="./img/coaches/pashkov@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/pashkov.webp 1x, ./img/coaches/pashkov@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/pashkov.jpg 1x, ./img/coaches/pashkov@2x.jpg 2x">
+                  <img src="./img/coaches/pashkov.jpg" width="260" height="294" loading="lazy" alt="Николай Утёсов">
                 </picture>
               </li>
 
@@ -456,15 +406,16 @@
                   <p>CrossFit</p>
                   <div class="coaches__info">
                     <ul>
-                      <li>Certified Level 3 Trainer</li>
-                      <li>Победитель чемпионата Области по CrossFit </li>
-                      <li>Опыт — 4 года</li>
+                      <li>Certified Level&nbsp;3 Trainer</li>
+                      <li>Победитель чемпионата Области по&nbsp;CrossFit </li>
+                      <li>Опыт&nbsp;&mdash; 4&nbsp;года</li>
                     </ul>
                   </div>
                 </div>
                 <picture>
-                  <source type="image/webp" srcset="./img/coaches/ketova.webp 1x, ./img/coaches/ketova@2x.webp 2x">
-                  <img src="/img/coaches/ketova.jpg 1x" srcset="./img/coaches/ketova@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Анна Павлова">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="./img/coaches/ketova.webp 1x, ./img/coaches/ketova@2x.webp 2x">
+                  <source media="(min-width: 320px)" srcset="./img/coaches/ketova.jpg 1x, ./img/coaches/ketova@2x.jpg 2x">
+                  <img src="./img/coaches/ketova.jpg" width="260" height="294" loading="lazy" alt="Марина Белова">
                 </picture>
               </li>
 
@@ -472,17 +423,78 @@
           </div>
           <div class="coaches__control" data-nojs="no-js">
             <button class="coaches__button coaches__button--prev">
-              <svg width="16" height="32"  focusable="false" aria-hidden="true">
+              <svg width="16" height="32" focusable="false" aria-hidden="true">
                 <use xlink:href="./img/sprite.svg#icon-button-prev"></use>
               </svg>
             </button>
 
             <button class="coaches__button coaches__button--next">
-              <svg width="16" height="32"  focusable="false" aria-hidden="true">
+              <svg width="16" height="32" focusable="false" aria-hidden="true">
                 <use xlink:href="./img/sprite.svg#icon-button-prev"></use>
               </svg>
             </button>
           </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advatanges__wrapper">
+          <h2>Наши преимущества</h2>
+          <dl class="advatanges__list">
+            <div class="advatanges__item advatanges__item--modif">
+              <dt class="advatanges__subitem advatanges__subitem--modif">
+                <b>100</b>
+                <span>Тренажеров</span>
+              </dt>
+              <dd class="advatanges__text">
+                <span>Современные тренажеры на&nbsp;все группы мышц</span>
+              </dd>
+            </div>
+
+            <div class="advatanges__item advatanges__item--square">
+              <dt>Площадь</dt>
+              <dd class="advatanges__description advatanges__description--big advatanges__description--square">
+                <b>900</b>
+                <span>кв/м</span>
+              </dd>
+              <dd class="advatanges__description advatanges__description--small">
+                <span>Занимайтесь без очередей и&nbsp;толкучки</span>
+              </dd>
+            </div>
+
+            <div class="advatanges__item advatanges__item--comfort">
+              <dt>Комфорт</dt>
+              <dd class="advatanges__description advatanges__description--big advatanges__description--comfort">
+                <b>350</b>
+                <span>мест</span>
+              </dd>
+              <dd class="advatanges__description advatanges__description--small">
+                <span>Просторные раздевалки, душевые, фен, Wi&nbsp;-&nbsp;Fi, кулеры</span>
+              </dd>
+            </div>
+
+            <div class="advatanges__item advatanges__item--parking">
+              <dt>Собственная парковка</dt>
+              <dd class="advatanges__description advatanges__description--big advatanges__description--parking">
+                <b>70</b>
+                <span>машин</span>
+              </dd>
+              <dd class="advatanges__description advatanges__description--small">
+                <span>Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке</span>
+              </dd>
+            </div>
+
+            <div class="advatanges__item advatanges__item--experience">
+              <dt>Тренерский опыт</dt>
+              <dd class="advatanges__description advatanges__description--big advatanges__description--experience">
+                <b>5+</b>
+                <span>лет</span>
+              </dd>
+              <dd class="advatanges__description advatanges__description--small">
+                <span>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</span>
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
 

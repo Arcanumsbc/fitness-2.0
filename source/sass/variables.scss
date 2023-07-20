@@ -8,12 +8,12 @@ $color-torch-red:                   #ed0233;
 $color-black-russian:               #030a1a;
 $color-torch-red-error:             #ff121f;
 $color-dark-cerulean:               #14367a;
-$color-cobalt:                      #003eb7;
+$color-cobalt:                      #0041ca;
 $color-crimson:                     #d10a42;
 $color-grey:                        #787878;
 $color-whisper:                     #e8e8e8;
 $color-spindle:                     #e8e8e8;
-
+$color-resolution-blue:             #1C3374;
 // Default
 
 $color-default-black:               #000000;
@@ -29,7 +29,7 @@ $color-neon-blue:                   #2c39f2;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$crimson-to-cobalt:                 linear-gradient(142deg, #d10a42 15%, #00359f 85%);
+$crimson-to-cobalt:                 linear-gradient(142deg, #d10a42 15%, #0041ca 85%);
 $torchred-to-cobalt:                linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $darkcerulean-to-venetianred:       conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
@@ -55,12 +55,15 @@ $fz-xbig:                           40px;
 $fz-xxbig:                          42px;
 $fz-xxxbig:                         46px;
 $fz-xxxlbig:                        48px;
-$lh-large:                          54px;
+$fs-large:                          54px;
+$fs-slarge:                         58px;
 $fz-xlarge:                         60px;
 $fz-xllarge:                        62px;
 $fz-xxlarge:                        64px;
 $fz-xxllarge:                       70px;
+$fz-xxxsllarge:                     71px;
 $fz-xxxlarge:                       72px;
+$fz-xxxslarge:                      74px;
 $fz-xxxllarge:                      76px;
 $fz-shuge:                          80px;
 $fz-huge:                           82px;
@@ -107,6 +110,7 @@ $lh-xhuge:                          86px;
 $lh-xlhuge:                         90px;
 $lh-xxhuge:                         92px;
 $lh-xxlhuge:                        100px;
+$lh-xxslhuge:                       106px;
 $lh-xxxlhuge:                       110px;
 $lh-xbiggest:                       120px;
 $lh-biggest:                        150px;

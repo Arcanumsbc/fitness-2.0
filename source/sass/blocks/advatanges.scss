@@ -1,0 +1,378 @@
+.advantages {
+  padding: 105px 0 102px;
+  margin: 0 auto;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding: 91px 0 98px;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 48px;
+  }
+
+}
+
+.advantages h2 {
+  font-family: $ff-alumni;
+  font-weight: $fw-semi-bold;
+  font-size: $lh-large;
+  line-height: $lh-xxlarge;
+  letter-spacing: $ls-medium;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $color-sapphire;
+  margin-bottom: 28px;
+
+  @include vp-1199 {
+    font-size: $fz-xxbig;
+    line-height: $lh-slarge;
+  }
+
+  @include vp-767 {
+    font-size: $fz-big;
+    line-height: $lh-xlbig;
+    margin-bottom: 38px;
+  }
+}
+
+.advatanges__list {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  margin: 0 auto;
+  column-gap: 40px;
+  row-gap: 145px;
+  padding: 28px 0;
+  max-width: 1040px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    column-gap: 25px;
+    row-gap: 34px;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 0;
+    padding: 0;
+  }
+}
+
+.advatanges__item {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 30px;
+
+  @include vp-1199 {
+    max-height: 100%;
+  }
+
+  @include vp-767 {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 390px;
+  }
+}
+
+.advatanges__item dt {
+  margin: 0;
+  padding: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: $ff-roboto;
+  font-weight: $fw-bold;
+  font-size: $fz-xmedium;
+  line-height: $lh-big;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: $fz-medium;
+  }
+
+  @include vp-767 {
+    order: 2;
+   }
+}
+
+.advatanges__item dd {
+  margin: 0;
+  padding: 0;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    order: 1;
+    align-items: center;
+   }
+}
+
+.advatanges__description span {
+  font-family: $ff-roboto;
+  font-weight: $fw-light;
+  font-size: $fz-xxsmall;
+  line-height: $lh-xmedium;
+  color: $color-sapphire;
+  display: flex;
+
+  @include vp-1199 {
+    transform: translateY(-5px);
+  }
+
+  @include vp-767 {
+    transform: translateY(0);
+    padding: 0 31px;
+   }
+}
+
+.advatanges__description--big span {
+  color: $color-neon-blue;
+  font-weight: $fw-normal;
+  font-size: $fz-xsmall;
+  line-height: $lh-medium;
+  text-align: start;
+  transform: translateY(2px);
+
+  @include vp-1199 {
+    transform: translateY(-5px);
+   }
+
+   @include vp-767 {
+    text-align: center;
+   }
+}
+
+.advatanges__item .advatanges__description--small {
+  margin: 0;
+  padding: 0;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  transform: translateY(2px);
+
+  @include vp-767 {
+    order: 3;
+    text-align: center;
+   }
+}
+
+.advatanges__item--modif .advatanges__text {
+  @include vp-767 {
+    order: 2;
+   }
+}
+
+.advatanges__subitem b {
+  font-family: $ff-roboto;
+  font-weight: $fw-bold;
+  font-size: $fz-xxxslarge;
+  line-height: $lh-huge;
+  color: $color-default-white;
+  transform: translateX(-2px);
+
+  @include vp-1199 {
+    display: flex;
+    padding: 0 60px;
+    text-align: center;
+    line-height: $lh-xxllarge;
+   }
+}
+
+.advatanges__subitem span {
+  font-size: $fz-xxxmedium;
+  line-height: $lh-xlbig;
+  color: $color-default-white;
+  display: flex;
+  justify-content: center;
+
+  @include vp-1199 {
+   font-size: $fz-xmedium;
+   transform: translateY(2px);
+  }
+
+  @include vp-767 {
+    transform: translateY(-5px);
+   }
+}
+
+.advatanges__text span {
+  margin-top: 32px;
+  font-family: $ff-roboto;
+  font-weight: $fw-normal;
+  font-size: $fz-xxsmall;
+  line-height: $lh-xxmedium;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin-top: 15px;
+    padding: 0 63px;
+   }
+
+   @include vp-767 {
+    margin-top: 0;
+    padding: 0 12px;
+  }
+}
+
+.advatanges__item--modif {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-resolution-blue;
+  padding: 48px 34px 58px;
+  min-width: 240px;
+  text-align: center;
+  margin-top: 2px;
+
+
+  @include vp-1199 {
+    max-width: 442px;
+    grid-row: 2/2;
+    grid-column: 1/3;
+    margin: 0 auto;
+    padding: 32px 50px 37px;
+  }
+
+  @include vp-767 {
+    margin-top: 16px;
+    margin-bottom: 25px;
+    order: 3;
+    min-width: 100%;
+    padding: 38px 40px 45px;
+   }
+}
+
+.advatanges__item--square {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: 20px;
+  position: relative;
+  transform: translateY(-5px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -80px;
+    left: -24px;
+    min-width: 340px;
+    height: 2px;
+    background-color: rgba($color-crimson, 0.2);
+  }
+
+  @include vp-1199 {
+    &::after {
+      display: none;
+    }
+
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  @include vp-767 {
+    order: 1;
+    margin-top: 0;
+   }
+}
+
+.advatanges__item--comfort {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-left: 20px;
+  transform: translateY(5px);
+
+  @include vp-1199 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    order: 3;
+   }
+}
+
+.advatanges__item--parking {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-left: 20px;
+  position: relative;
+  transform: translateY(-5px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -80px;
+    left: 4px;
+    width: 340px;
+    height: 2px;
+    background-color: rgba($color-crimson, 0.2);
+  }
+
+  @include vp-1199 {
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin-left: 0;
+    margin-top: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    order: 2;
+    margin-top: 0;
+   }
+}
+
+.advatanges__item--experience {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-left: 20px;
+  transform: translateY(5px);
+
+  @include vp-1199 {
+    grid-row: 3/4;
+    grid-column: 2/2;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    order: 5;
+   }
+}
+
+.advatanges__description {
+  margin: 0;
+  padding: 0;
+}
+
+.advatanges__description b {
+  font-family: $ff-roboto;
+  font-weight: $fw-bold;
+  font-size: $fz-xxxsllarge;
+  line-height: $fz-xlarge;
+  margin: 0;
+  padding: 0;
+  background: $crimson-to-cobalt;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+
+  @include vp-1199 {
+    font-size: $fs-slarge;
+  }
+}
