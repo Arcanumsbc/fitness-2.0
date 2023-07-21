@@ -40,7 +40,7 @@
         <div class="main-header__content header-content">
           <h2>Фитнес центр</h2>
           <p>омск</p>
-          <a href="#abonemets">Купить абонемент</a>
+          <a href="#abonements-tabs">Купить абонемент</a>
         </div>
 
         <div class="main-header__options header-options">
@@ -502,14 +502,14 @@
         <div class="container stocks__wrapper">
           <h2>Акции</h2>
           <ul class="stocks__list">
-            <li class="stock__item stock__item--modif">
-              <div class="stock__info">
+            <li class="stocks__item stocks__item--modif">
+              <div class="stocks__info">
                 <h3>4999</h3>
                 <span>Год</span>
                 <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                 <a href="#" target="_blank" rel="noopener">Подробнее</a>
               </div>
-              <div class="stock__poster">
+              <div class="stocks__poster">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="./img/stocks/stock-desk.webp 1x, ./img/stocks/stock-desk@2x.webp 2x">
@@ -524,17 +524,17 @@
                     srcset="./img/stocks/stock-tablet.jpg 1x, ./img/stocks/stock-tablet@2x.jpg 2x">
                   <source media="(min-width: 320px)"
                     srcset="./img/stocks/stock-mobile.jpg 1x, ./img/stocks/stock-mobile@2x.jpg 2x">
-                  <img src="./img/stocks/stock-desk.jpg" width="280" height="462" alt="Будь всегда в форме" loading="lazy" >
+                  <img src="./img/stocks/stock-desk.jpg" width="280" height="462" alt="Будь всегда в форме" loading="lazy">
                 </picture>
               </div>
             </li>
-            <li class="stock__item">
+            <li class="stocks__item">
               <h3>Месяц бесплатно</h3>
               <p>Приведи друга, получи абонемент в подарок</p>
               <a href="#" target="_blank" rel="noopener">Подробнее</a>
             </li>
 
-            <li class="stock__item">
+            <li class="stocks__item">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с&nbsp;командой</p>
               <a href="#" target="_blank" rel="noopener">Подробнее</a>
@@ -546,7 +546,54 @@
       <section class="questions" id="questions">
       </section>
 
-      <section class="reviews" id="reviews"></section>
+      <section class="feedback" id="feedback">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="feedback__wrapper">
+            <div class="feedback__slider swiper">
+              <ul class="feedback__list swiper-wrapper">
+                <li class="feedback__item swiper-slide">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                  <div class="feedback__avatar">
+                    <source type="image/webp" srcset="./img/feedback/orlova.webp 1x, ./img/feedback/orlova@2x.webp 2x,">
+                    <img src="./img/feedback/orlova.png" srcset="./img/feedback/orlova@2x.png" width="80" height="80" alt="Аватар пользователя" loading="lazy">
+                  </div>
+                </li>
+                <li class="feedback__item swiper-slide">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                  <div class="feedback__avatar">
+                    <source type="image/webp" srcset="./img/feedback/orlova.webp 1x, ./img/feedback/orlova@2x.webp 2x,">
+                    <img src="./img/feedback/orlova.png" srcset="./img/feedback/orlova@2x.png" width="80" height="80" alt="Аватар пользователя" loading="lazy">
+                  </div>
+                </li>
+                <li class="feedback__item swiper-slide">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                  <div class="feedback__avatar">
+                    <source type="image/webp" srcset="./img/feedback/orlova.webp 1x, ./img/feedback/orlova@2x.webp 2x,">
+                    <img src="./img/feedback/orlova.png" srcset="./img/feedback/orlova@2x.png" width="80" height="80" alt="Аватар пользователя" loading="lazy">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="feedback__control" data-nojs="no-js">
+              <button class="feedback__button feedback__button--prev">
+                <svg width="16" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon-button-prev"></use>
+                </svg>
+              </button>
+
+              <button class="feedback__button feedback__button--next">
+                <svg width="16" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon-button-prev"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer>

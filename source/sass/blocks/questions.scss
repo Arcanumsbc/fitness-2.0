@@ -1,4 +1,12 @@
 .questions {
   background-color: $color-ghost-white;
-  padding: 100px 0;
+  padding: 398px 0;
+
+  @include vp-1199 {
+    padding: 426px 0;
+  }
+
+  @include vp-767 {
+    padding: 407px 0;
+  }
 }

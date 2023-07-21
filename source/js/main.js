@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initCoachesSlider} from './vendor/init-slider';
+import {initCoachesSlider, initFeedbackSlider} from './vendor/init-slider';
 
 // ---------------------------------
 
@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initCoachesSlider();
+  initFeedbackSlider();
 
   // Modules
   // ---------------------------------

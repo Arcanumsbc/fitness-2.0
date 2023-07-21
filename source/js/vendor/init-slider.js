@@ -38,4 +38,29 @@ const initCoachesSlider = () => {
   return coachesSlider;
 };
 
-export { initCoachesSlider };
+const initFeedbackSlider = () => {
+  const feedbackContainer = document.querySelector('.feedback__slider');
+  const feedbackControl = document.querySelector('.feedback__control');
+
+  feedbackControl.removeAttribute('data-nojs');
+
+  const feedbackSlider = new Swiper(feedbackContainer, {
+
+    slidesPerView: 1,
+
+    spaceBetween: 100,
+    autoHeight: true,
+
+    loop: false,
+    simulateTouch: true,
+
+    navigation: {
+      nextEl: '.feedback__button--next',
+      prevEl: '.feedback__button--prev',
+    },
+  });
+  return feedbackSlider;
+
+};
+
+export { initCoachesSlider, initFeedbackSlider };
