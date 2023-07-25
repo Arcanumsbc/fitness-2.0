@@ -8,8 +8,8 @@
   src:
     local("Alumni Sans"),
     local("Alumni Sans Regular"),
-    url("../../fonts/AlumniSans-Regular.woff2") format("woff2"),
-    url("./../fonts/AlumniSans-Regular.woff") format("woff");
+    url("../fonts/AlumniSans-Regular.woff2") format("woff2"),
+    url("./fonts/AlumniSans-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -22,8 +22,8 @@
   src:
     local("Alumni Sans"),
     local("Alumni Sans SemiBold"),
-    url("../../fonts/AlumniSans-SemiBold.woff2") format("woff2"),
-    url("../../fonts/AlumniSans-SemiBold.woff") format("woff");
+    url("../fonts/AlumniSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/AlumniSans-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -36,8 +36,8 @@
   src:
     local("Alumni Sans"),
     local("Alumni Sans Bold"),
-    url("../../fonts/AlumniSans-Bold.woff2") format("woff2"),
-    url("../../fonts/AlumniSans-Bold.woff") format("woff");
+    url("../fonts/AlumniSans-Bold.woff2") format("woff2"),
+    url("../fonts/AlumniSans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -50,8 +50,8 @@
   src:
     local("Roboto Condensed"),
     local("Roboto Condensed Light"),
-    url("../../fonts/RobotoCondensed-Light.woff2") format("woff2"),
-    url("../../fonts/RobotoCondensed-Light.woff") format("woff");
+    url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -64,8 +64,8 @@
   src:
     local("Roboto Condensed"),
     local("Roboto Condensed Regular"),
-    url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-    url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -78,6 +78,6 @@
   src:
     local("Roboto Condensed"),
     local("Roboto Condensed Bold"),
-    url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-    url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+    url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
