@@ -1,0 +1,234 @@
+.registration {
+  padding: 56px 0 51px;
+
+  @include vp-1199 {
+    padding: 60px 0 68px;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 69px;
+  }
+}
+
+.registration__wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  padding-left: 22px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.registration h2 {
+  font-family: $ff-alumni;
+  font-weight: $fw-bold;
+  font-size: $fs-large;
+  line-height: $lh-huge;
+  letter-spacing: $ls-medium;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: $fz-xxbig;
+    line-height: $lh-slarge;
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    font-weight: $fw-semi-bold;
+    font-size: $fz-big;
+    line-height: $fz-sbig;
+    margin-bottom: 29px;
+  }
+}
+
+.registration__form fieldset {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  column-gap: 30px;
+  row-gap: 24px;
+  width: 410px;
+  border: none;
+
+  @include vp-1199 {
+    column-gap: 60px;
+    width: 472px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    column-gap: 0;
+    row-gap: 23px;
+    width: 100%;
+  }
+}
+
+.registration__custom-input,
+.registration__custom-textarea {
+  position: relative;
+  // border: none;
+  // border-bottom: 1px solid rgba($color-default-white, 0.5);
+  // min-height: 39px;
+  // min-width: 190px;
+  // display: block;
+  // margin: 0;
+  // padding: 5px 15px 5px 0;
+  // background-color: transparent;
+  // font-family: $ff-roboto;
+  // font-weight: $fw-normal;
+  // font-size: $fz-xsmall;
+  // line-height: $lh-xxsmall;
+  // color: $color-default-white;
+  // cursor: text;
+  // outline: none;
+  // position: relative;
+
+  // @include hover {
+  //   border-bottom: 1px solid rgba($color-default-white, 1);
+  // }
+
+  label {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    input,
+    textarea {
+      border: none;
+      border-bottom: 1px solid rgba($color-default-white, 0.5);
+      min-height: 39px;
+      min-width: 192px;
+      display: block;
+      margin: 0;
+      background-color: transparent;
+      font-family: $ff-roboto;
+      font-weight: $fw-normal;
+      font-size: $fz-xsmall;
+      line-height: $lh-xxsmall;
+      color: $color-default-white;
+      cursor: text;
+      outline: none;
+
+      @include vp-1199 {
+        min-width: 206px;
+      }
+
+      @include vp-767 {
+        min-width: 290px;
+      }
+
+      @include hover {
+        border-bottom: 1px solid rgba($color-default-white, 1);
+      }
+
+      &:active,
+      &:focus {
+        border: 1px solid $color-default-white;
+        padding: 0 15px;
+      }
+
+      &:active::placeholder,
+      &:focus::placeholder {
+        color: transparent;
+      }
+
+      &:disabled {
+        color: rgba($color-default-white, 0.4);
+        border: none;
+        border-bottom: 1px solid rgba($color-default-white, 0.3);
+        padding: 0;
+      }
+    }
+  }
+
+  &__error {
+    border: none;
+    border-bottom: 1px solid rgba($color-torch-red-error, 1);
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    color: $color-torch-red-error;
+    opacity: 0;
+    transition: $trans-default;
+  }
+
+  &.is-invalid {
+    input,
+    textarea {
+      @include hover-focus {
+        color: $color-torch-red-error;
+        border: none;
+        border-bottom: 1px solid $color-torch-red-error;
+      }
+    }
+  }
+
+  .input-message {
+    font-family: $ff-roboto;
+    font-weight: $fw-normal;
+    font-size: $fz-xsmall;
+    line-height: $lh-xmedium;
+    position: absolute;
+    left: 2px;
+    bottom: -21px;
+
+    &.is-invalid {
+      color: $color-torch-red-error;
+    }
+
+    &.is-valid {
+      color: $color-default-white;
+    }
+  }
+}
+
+.registration__form button[type="submit"] {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: block;
+  margin: 0;
+  min-width: 100%;
+  padding: 16px 30px;
+  border: 3px solid $color-default-white;
+  background-color: transparent;
+  text-transform: uppercase;
+  user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  font-family: $ff-roboto;
+  font-weight: $fw-bold;
+  font-size: $fz-xsmall;
+  line-height: $lh-xxsmall;
+  letter-spacing: $ls-interium;
+  color: $color-default-white;
+  transform: translateX(-2px);
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    border-color: $color-default-white;
+    color: $color-egyptian-blue;
+
+    &:active {
+      color: $color-sapphire;
+    }
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

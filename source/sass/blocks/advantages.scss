@@ -10,7 +10,6 @@
   @include vp-767 {
     padding: 64px 0 48px;
   }
-
 }
 
 .advantages h2 {
@@ -37,7 +36,7 @@
   }
 }
 
-.advatanges__list {
+.advantages__list {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   grid-template-rows: repeat(2, min-content);
@@ -65,7 +64,7 @@
   }
 }
 
-.advatanges__item {
+.advantages__item {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: repeat(2, min-content);
@@ -85,7 +84,7 @@
   }
 }
 
-.advatanges__item dt {
+.advantages__item dt {
   margin: 0;
   padding: 0;
   grid-column: 2/3;
@@ -102,10 +101,10 @@
 
   @include vp-767 {
     order: 2;
-   }
+  }
 }
 
-.advatanges__item dd {
+.advantages__item dd {
   margin: 0;
   padding: 0;
   grid-column: 1/2;
@@ -116,10 +115,10 @@
   @include vp-767 {
     order: 1;
     align-items: center;
-   }
+  }
 }
 
-.advatanges__description span {
+.advantages__description span {
   font-family: $ff-roboto;
   font-weight: $fw-light;
   font-size: $fz-xxsmall;
@@ -134,10 +133,10 @@
   @include vp-767 {
     transform: translateY(0);
     padding: 0 31px;
-   }
+  }
 }
 
-.advatanges__description--big span {
+.advantages__description--big span {
   color: $color-neon-blue;
   font-weight: $fw-normal;
   font-size: $fz-xsmall;
@@ -147,14 +146,14 @@
 
   @include vp-1199 {
     transform: translateY(-5px);
-   }
+  }
 
-   @include vp-767 {
+  @include vp-767 {
     text-align: center;
-   }
+  }
 }
 
-.advatanges__item .advatanges__description--small {
+.advantages__item .advantages__description--small {
   margin: 0;
   padding: 0;
   grid-column: 2/3;
@@ -164,16 +163,16 @@
   @include vp-767 {
     order: 3;
     text-align: center;
-   }
+  }
 }
 
-.advatanges__item--modif .advatanges__text {
+.advantages__item--modif .advantages__text {
   @include vp-767 {
     order: 2;
-   }
+  }
 }
 
-.advatanges__subitem b {
+.advantages__subitem b {
   font-family: $ff-roboto;
   font-weight: $fw-bold;
   font-size: $fz-xxxslarge;
@@ -186,10 +185,10 @@
     padding: 0 60px;
     text-align: center;
     line-height: $lh-xxllarge;
-   }
+  }
 }
 
-.advatanges__subitem span {
+.advantages__subitem span {
   font-size: $fz-xxxmedium;
   line-height: $lh-xlbig;
   color: $color-default-white;
@@ -197,16 +196,16 @@
   justify-content: center;
 
   @include vp-1199 {
-   font-size: $fz-xmedium;
-   transform: translateY(2px);
+    font-size: $fz-xmedium;
+    transform: translateY(2px);
   }
 
   @include vp-767 {
     transform: translateY(-5px);
-   }
+  }
 }
 
-.advatanges__text span {
+.advantages__text span {
   margin-top: 32px;
   font-family: $ff-roboto;
   font-weight: $fw-normal;
@@ -217,15 +216,15 @@
   @include vp-1199 {
     margin-top: 15px;
     padding: 0 63px;
-   }
+  }
 
-   @include vp-767 {
+  @include vp-767 {
     margin-top: 0;
     padding: 0 12px;
   }
 }
 
-.advatanges__item--modif {
+.advantages__item--modif {
   grid-column: 2/3;
   grid-row: 1/3;
   display: flex;
@@ -237,13 +236,12 @@
   text-align: center;
   margin-top: 2px;
 
-
   @include vp-1199 {
     max-width: 442px;
     grid-row: 2/2;
     grid-column: 1/3;
     margin: 0 auto;
-    padding: 32px 50px 37px;
+    padding: 32px 50px 39px;
   }
 
   @include vp-767 {
@@ -252,10 +250,10 @@
     order: 3;
     min-width: 100%;
     padding: 38px 40px 45px;
-   }
+  }
 }
 
-.advatanges__item--square {
+.advantages__item--square {
   grid-column: 1/2;
   grid-row: 1/2;
   margin-left: 20px;
@@ -284,10 +282,10 @@
   @include vp-767 {
     order: 1;
     margin-top: 0;
-   }
+  }
 }
 
-.advatanges__item--comfort {
+.advantages__item--comfort {
   grid-column: 1/2;
   grid-row: 2/3;
   margin-left: 20px;
@@ -301,10 +299,10 @@
 
   @include vp-767 {
     order: 3;
-   }
+  }
 }
 
-.advatanges__item--parking {
+.advantages__item--parking {
   grid-column: 3/4;
   grid-row: 1/2;
   margin-left: 20px;
@@ -335,10 +333,10 @@
   @include vp-767 {
     order: 2;
     margin-top: 0;
-   }
+  }
 }
 
-.advatanges__item--experience {
+.advantages__item--experience {
   grid-column: 3/4;
   grid-row: 2/3;
   margin-left: 20px;
@@ -352,15 +350,15 @@
 
   @include vp-767 {
     order: 5;
-   }
+  }
 }
 
-.advatanges__description {
+.advantages__description {
   margin: 0;
   padding: 0;
 }
 
-.advatanges__description b {
+.advantages__description b {
   font-family: $ff-roboto;
   font-weight: $fw-bold;
   font-size: $fz-xxxsllarge;

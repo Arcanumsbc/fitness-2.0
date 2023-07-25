@@ -1,5 +1,5 @@
 .events {
-  padding: 120px 103px 108px;
+  padding: 120px 103px 105px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -69,7 +69,7 @@
   grid-column: 1/2;
   grid-row: 1/3;
   text-align: center;
-  text-transform: uppercase ;
+  text-transform: uppercase;
 
   @include vp-1199 {
     font-size: $fz-xxxlbig;
@@ -111,7 +111,6 @@
   }
 }
 
-.events__content dt,
 .events__content dt {
   color: $color-default-white;
   padding: 0;
@@ -127,7 +126,6 @@
   }
 }
 
-.events__content dd,
 .events__content dd {
   position: relative;
   color: $color-default-white;
@@ -191,7 +189,19 @@
   letter-spacing: $ls-interium;
   color: $color-default-white;
   text-transform: uppercase;
+  transition: color $trans-default;
   border: 4px solid $color-default-white;
+  outline: none;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    border-color: $color-default-white;
+    color: $color-egyptian-blue;
+
+    &:active {
+      color: $color-sapphire;
+    }
+  }
 
   @include vp-1199 {
     font-size: $fz-ssmall;
@@ -206,6 +216,7 @@
     margin-top: 30px;
   }
 }
+
 .events__poster {
   position: relative;
   overflow: hidden;

@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 3;
 }
 
-.abonements-card ul{
+.abonements-card ul {
   display: flex;
   column-gap: 40px;
   align-items: center;
@@ -43,10 +42,9 @@
     padding: 43px 34px;
   }
 
-  &:hover,
-  &:focus-within {
+  @include hover-focus {
     border: 7px solid;
-    border-image-source: $crimson-to-cobalt;
+    border-image-source: $torchred-to-cobalt;
     border-image-slice: 1;
     outline: none;
   }
@@ -157,22 +155,22 @@
   user-select: none;
   touch-action: manipulation;
   cursor: pointer;
+  transition: color $trans-default;
 
   @include vp-767 {
     padding: 23px 43px;
   }
 
-  &:hover,
-  &:focus-within {
+  @include hover-focus {
     border: 2px solid;
     color: $color-default-white;
     background-image: $torchred-to-cobalt;
     border-image-source: $torchred-to-cobalt;
     border-image-slice: 1;
     outline: none;
-  }
 
-  &:active {
-    color: rgba($color-default-white, 0.5);
+    &:active {
+      color: rgba($color-default-white, 0.5);
+    }
   }
 }

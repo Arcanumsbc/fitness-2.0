@@ -1,6 +1,6 @@
 .coaches {
   margin: 0 auto;
-  padding: 0 23px 105px;
+  padding: 0 23px 107px;
   background-color: $color-default-white;
 
   @include vp-1199 {
@@ -233,13 +233,15 @@
   touch-action: manipulation;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     border: 1px solid $color-sapphire;
-  }
 
-  &:active {
-    background-color: $color-sapphire;
+    &:active {
+      & svg {
+        stroke: $color-default-white;
+      }
+      background-color: $color-sapphire;
+    }
   }
 
   &:disabled {
@@ -284,10 +286,6 @@
     width: 10px;
     height: 19px;
   }
-}
-
-.coaches__button:active svg {
-  stroke: $color-default-white;
 }
 
 .coaches__control[data-nojs="no-js"] {

@@ -1,11 +1,11 @@
 .main-header {
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
   background: $darkcerulean-to-venetianred;
 
   @include vp-1199 {
     padding-top: 40px;
-    padding-bottom: 66px;
+    padding-bottom: 69px;
   }
 
   @include vp-767 {
@@ -14,7 +14,7 @@
   }
 }
 
-.main-header__inner {
+.main-header__wrapper {
   display: grid;
   grid-template-columns: 134px 275px 1fr max-content;
   grid-template-rows: min-content 1fr 1fr;

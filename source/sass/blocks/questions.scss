@@ -1,12 +1,145 @@
 .questions {
   background-color: $color-ghost-white;
-  padding: 398px 0;
+  padding: 120px 0;
 
   @include vp-1199 {
-    padding: 426px 0;
+    padding: 100px 0 70px;
   }
 
   @include vp-767 {
-    padding: 407px 0;
+    padding: 70px 0;
+  }
+}
+
+.questions h2 {
+  font-family: $ff-alumni;
+  font-weight: $fw-semi-bold;
+  font-size: $fs-large;
+  line-height: $lh-xxlarge;
+  letter-spacing: $ls-medium;
+  margin: 0;
+  margin-bottom: 40px;
+  color: $color-sapphire;
+
+
+  @include vp-1199 {
+    text-align: center;
+    font-size: $fz-xxbig;
+    line-height: $lh-slarge;
+    margin-bottom: 42px;
+  }
+
+  @include vp-767 {
+    font-size: $fz-big;
+    line-height: $lh-xlbig;
+    margin-bottom: 30px;
+  }
+}
+
+.questions__wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
+
+.questions__tabs {
+  width: 260px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+  }
+}
+
+.questions__tabs ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  row-gap: 8px;
+  flex-direction: column;
+
+  @include vp-1199 {
+    flex-direction: row;
+    column-gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+.questions__tabs li {
+  width: 100%;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    width: 139px;
+    flex-wrap: wrap;
+  }
+}
+
+.questions__button {
+  width: 100%;
+  min-height: 54px;
+  display: block;
+  font-family: $ff-roboto;
+  font-weight: $fw-normal;
+  font-size: $fz-xxxsmall;
+  line-height: $lh-xxxsmall;
+  color: $color-sapphire;
+  border: 1px solid rgba($color-sapphire, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 18px 20px;
+  text-align: center;
+
+  @include hover-focus {
+    border: 1px solid $color-sapphire;
+    outline: none;
+  }
+
+  &.is-active {
+    border: 1px solid;
+    color: $color-default-white;
+    background-image: $torchred-to-cobalt;
+    border-image-source: $torchred-to-cobalt;
+    border-image-slice: 1;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  @include vp-767 {
+    font-size: $fz-xxsmall;
+    line-height: $lh-xxsmall;
+    padding: 12px 20px;
+    min-height: 44px;
+  }
+}
+
+.questions__content {
+  width: 860px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199 {
+    width: 100%;
   }
 }
