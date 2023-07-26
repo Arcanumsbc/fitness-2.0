@@ -11,6 +11,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicons/120.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/512.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
   <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/AlumniSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -40,7 +41,7 @@
         <div class="main-header__content header-content">
           <h2>Фитнес центр</h2>
           <p>омск</p>
-          <a class="header-content__button" href="#abonements-tabs">Купить абонемент</a>
+          <a class="header-content__button" href="#season-tickets">Купить абонемент</a>
         </div>
 
         <div class="main-header__options header-options">
@@ -147,57 +148,57 @@
         </div>
       </section>
 
-      <section class="abonements-tabs" id="abonements-tabs">
-        <div class="container abonements-tabs__container">
+      <section class="season-tickets" id="season-tickets">
+        <div class="container season-tickets__container">
           <h2>Абонементы</h2>
-          <div class="abonements-tabs__wrapper" data-tabs="parent" data-delay="300" data-height="max">
-            <div class="abonements-tabs__tabs" data-tabs="controls">
+          <div class="season-tickets__wrapper" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="season-tickets__tabs" data-tabs="controls">
               <ul>
                 <li>
-                  <button class="abonements-tabs__button is-active" type="button" data-tabs="control">1 месяц</button>
+                  <button class="season-tickets__button is-active" type="button" data-tabs="control">1 месяц</button>
                 </li>
                 <li>
-                  <button class="abonements-tabs__button" type="button" data-tabs="control">6 месяцев</button>
+                  <button class="season-tickets__button" type="button" data-tabs="control">6 месяцев</button>
                 </li>
                 <li>
-                  <button class="abonements-tabs__button" type="button" data-tabs="control">12 месяцев</button>
+                  <button class="season-tickets__button" type="button" data-tabs="control">12 месяцев</button>
                 </li>
               </ul>
             </div>
-            <div class="abonements-tabs__content abonements-card" data-tabs="content">
+            <div class="season-tickets__content season-ticket-card" data-tabs="content">
               <ul data-tabs="element">
                 <li>
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="5000">5000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
                 <li>
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="1700">1700</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
                 <li>
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="2700">2700</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
               </ul>
 
@@ -205,35 +206,35 @@
                 <li>
                   <h3>С тренером</h3>
                   <p>72 занятий</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="30000">30000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
                 <li>
                   <h3>Дневной</h3>
                   <p>с 12:00 до 17:00</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="8000">8000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
                 <li>
                   <h3>Полный день</h3>
                   <p>с 8:00 до 23:00</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="12000">12000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
               </ul>
 
@@ -241,41 +242,41 @@
                 <li>
                   <h3>С тренером</h3>
                   <p>144 занятий</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="60000">60000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
                 <li>
                   <h3>Дневной</h3>
                   <p>с 8:00 до 17:00</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="16000">16000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
                 <li>
                   <h3>Полный день</h3>
                   <p>с 8:00 до 22:00</p>
-                  <div class="abonements-card__data-price">
+                  <div class="season-ticket-card__data-price">
                     <span data-price="24000">24000</span>
                     <svg width="30" height="42" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#icon-ruble"></use>
                     </svg>
                   </div>
-                  <a class="abonements-card__button" href="#" target="_blank">Купить абонемент</a>
+                  <a class="season-ticket-card__button" href="#" target="_blank">Купить абонемент</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="abonements-tabs__decoration">
+          <div class="season-tickets__decoration">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="./img/tabs/tabs-decor-desk.webp 1x, ./img/tabs/tabs-decor-desk@2x.webp 2x">
@@ -907,7 +908,7 @@
       </section>
 
       <section class="feedback" id="feedback">
-        <div class="container">
+        <div class="container feedback__container">
           <h2>Отзывы</h2>
           <div class="feedback__wrapper">
             <div class="feedback__slider swiper">
@@ -1033,7 +1034,7 @@
             <a href="#advantages">Услуги</a>
           </li>
           <li>
-            <a href="#abonements-tabs">Абонементы</a>
+            <a href="#season-tickets">Абонементы</a>
           </li>
           <li>
             <a href="#stocks">Акции</a>

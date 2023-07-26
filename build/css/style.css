@@ -1977,13 +1977,13 @@ button,
   fill: #ffffff;
 }
 
-.abonements-tabs {
+.season-tickets {
   position: relative;
   background-color: #f8f9fc;
   padding: 120px 0;
 }
 
-.abonements-tabs__container {
+.season-tickets__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1997,17 +1997,17 @@ button,
   padding: 0;
 }
 
-.abonements-tabs__wrapper {
+.season-tickets__wrapper {
   width: 100%;
   z-index: 3;
 }
 
-.abonements-tabs__content {
+.season-tickets__content {
   width: 100%;
   margin-top: 38px;
 }
 
-.abonements-tabs h2 {
+.season-tickets h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
@@ -2018,7 +2018,7 @@ button,
   margin-bottom: 17px;
 }
 
-.abonements-tabs__tabs ul {
+.season-tickets__tabs ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2034,7 +2034,7 @@ button,
   position: relative;
 }
 
-.abonements-tabs__tabs ul::after {
+.season-tickets__tabs ul::after {
   content: "";
   position: absolute;
   min-width: 341px;
@@ -2043,7 +2043,7 @@ button,
   background-color: rgba(120, 120, 120, 0.2);
 }
 
-.abonements-tabs__button {
+.season-tickets__button {
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -2058,29 +2058,29 @@ button,
   text-align: left;
 }
 
-.abonements-tabs__button.focus-visible:focus {
+.season-tickets__button.focus-visible:focus {
   color: #102654;
   border-bottom: 2px solid #d10a42;
 }
 
-.abonements-tabs__button.is-active {
+.season-tickets__button.is-active {
   border-bottom: 2px solid #d10a42;
   color: #102654;
 }
 
-.abonements-tabs__decoration {
+.season-tickets__decoration {
   position: absolute;
   right: 0;
   bottom: -150px;
 }
 
-.abonements-tabs__decoration img {
+.season-tickets__decoration img {
   width: 287px;
   height: 494px;
   display: block;
 }
 
-.abonements-card {
+.season-ticket-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2093,7 +2093,7 @@ button,
   align-items: center;
 }
 
-.abonements-card ul {
+.season-ticket-card ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2108,7 +2108,7 @@ button,
   padding: 0;
 }
 
-.abonements-card li {
+.season-ticket-card li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2124,14 +2124,14 @@ button,
   overflow: hidden;
 }
 
-.abonements-card li.focus-visible:focus {
+.season-ticket-card li.focus-visible:focus {
   border: 7px solid;
   border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
   outline: none;
 }
 
-.abonements-card h3 {
+.season-ticket-card h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -2141,7 +2141,7 @@ button,
   padding-bottom: 10px;
 }
 
-.abonements-card p {
+.season-ticket-card p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2151,12 +2151,12 @@ button,
   padding-bottom: 65px;
 }
 
-.abonements-card__data-price {
+.season-ticket-card__data-price {
   margin-bottom: 35px;
   margin-right: 1px;
 }
 
-.abonements-card__data-price svg {
+.season-ticket-card__data-price svg {
   width: 30px;
   height: 42px;
   fill: #102654;
@@ -2165,7 +2165,7 @@ button,
   margin-left: 12px;
 }
 
-.abonements-card__data-price span {
+.season-ticket-card__data-price span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 60px;
@@ -2176,7 +2176,7 @@ button,
   z-index: 2;
 }
 
-.abonements-card__data-price span::after {
+.season-ticket-card__data-price span::after {
   content: attr(data-price);
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -2192,7 +2192,7 @@ button,
   transform: translateY(8%) translateX(10%);
 }
 
-.abonements-card__button {
+.season-ticket-card__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
@@ -2215,7 +2215,7 @@ button,
   transition: color 0.3s ease;
 }
 
-.abonements-card__button.focus-visible:focus {
+.season-ticket-card__button.focus-visible:focus {
   border: 2px solid;
   color: #ffffff;
   background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -2224,7 +2224,7 @@ button,
   outline: none;
 }
 
-.abonements-card__button.focus-visible:focus:active {
+.season-ticket-card__button.focus-visible:focus:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -4506,44 +4506,44 @@ button,
     transform: translateX(-48%) translateY(-50%);
   }
 
-  .abonements-tabs {
+  .season-tickets {
     padding: 100px 0;
   }
 
-  .abonements-tabs__content {
+  .season-tickets__content {
     margin-top: 45px;
   }
 
-  .abonements-tabs h2 {
+  .season-tickets h2 {
     font-size: 42px;
     line-height: 50px;
   }
 
-  .abonements-tabs__tabs ul {
+  .season-tickets__tabs ul {
     -webkit-column-gap: 52px;
     -moz-column-gap: 52px;
     column-gap: 52px;
   }
 
-  .abonements-tabs__tabs ul::after {
+  .season-tickets__tabs ul::after {
     min-width: 332px;
   }
 
-  .abonements-tabs__button {
+  .season-tickets__button {
     font-size: 18px;
     line-height: 27px;
   }
 
-  .abonements-tabs__decoration {
+  .season-tickets__decoration {
     bottom: -125px;
   }
 
-  .abonements-tabs__decoration img {
+  .season-tickets__decoration img {
     width: 347px;
     height: 444px;
   }
 
-  .abonements-card ul {
+  .season-ticket-card ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4551,7 +4551,7 @@ button,
     row-gap: 41px;
   }
 
-  .abonements-card li {
+  .season-ticket-card li {
     min-width: 442px;
     padding: 56px 111px;
   }
@@ -5244,80 +5244,80 @@ button,
     transform: translateX(-50%) translateY(-40%);
   }
 
-  .abonements-tabs {
+  .season-tickets {
     padding: 64px 0 71px;
   }
 
-  .abonements-tabs__content {
+  .season-tickets__content {
     margin-top: 35px;
   }
 
-  .abonements-tabs h2 {
+  .season-tickets h2 {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 19px;
   }
 
-  .abonements-tabs__tabs ul {
+  .season-tickets__tabs ul {
     -webkit-column-gap: 40px;
     -moz-column-gap: 40px;
     column-gap: 40px;
   }
 
-  .abonements-tabs__tabs ul::after {
+  .season-tickets__tabs ul::after {
     min-width: 290px;
   }
 
-  .abonements-tabs__button {
+  .season-tickets__button {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .abonements-tabs__decoration {
+  .season-tickets__decoration {
     display: none;
   }
 
-  .abonements-card ul {
+  .season-ticket-card ul {
     row-gap: 36px;
   }
 
-  .abonements-card li {
+  .season-ticket-card li {
     min-width: 290px;
     padding: 43px 34px;
   }
 
-  .abonements-card h3 {
+  .season-ticket-card h3 {
     font-size: 22px;
     line-height: 24px;
   }
 
-  .abonements-card p {
+  .season-ticket-card p {
     padding-bottom: 54px;
   }
 
-  .abonements-card__data-price {
+  .season-ticket-card__data-price {
     margin-bottom: 31px;
     margin-right: 0;
   }
 
-  .abonements-card__data-price svg {
+  .season-ticket-card__data-price svg {
     width: 24px;
     height: 33px;
     margin-left: 5px;
   }
 
-  .abonements-card__data-price span::after {
+  .season-ticket-card__data-price span::after {
     font-size: 80px;
     line-height: 120px;
     left: -32%;
   }
 
-  .abonements-card__data-price span {
+  .season-ticket-card__data-price span {
     font-size: 48px;
     line-height: 72px;
   }
 
-  .abonements-card__button {
+  .season-ticket-card__button {
     padding: 23px 43px;
   }
 
@@ -6010,19 +6010,19 @@ button,
     opacity: 1;
   }
 
-  .abonements-tabs__button:hover:not(.focus-visible) {
+  .season-tickets__button:hover:not(.focus-visible) {
     color: #102654;
     border-bottom: 2px solid #d10a42;
   }
 
-  .abonements-card li:hover:not(.focus-visible) {
+  .season-ticket-card li:hover:not(.focus-visible) {
     border: 7px solid;
     border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border-image-slice: 1;
     outline: none;
   }
 
-  .abonements-card__button:hover:not(.focus-visible) {
+  .season-ticket-card__button:hover:not(.focus-visible) {
     border: 2px solid;
     color: #ffffff;
     background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -6031,7 +6031,7 @@ button,
     outline: none;
   }
 
-  .abonements-card__button:hover:not(.focus-visible):active {
+  .season-ticket-card__button:hover:not(.focus-visible):active {
     color: rgba(255, 255, 255, 0.5);
   }
 
