@@ -65,6 +65,10 @@
     padding: 20px 0;
     min-height: 84px;
 
+    &:first-of-type h3 {
+      margin-top: 0;
+    }
+
     &:first-of-type button {
       margin-top: 7px;
     }

@@ -4570,6 +4570,15 @@ button,
     padding: 56px 111px;
   }
 
+  .season-ticket-card__data-price {
+    margin-bottom: 33px;
+    margin-right: 0;
+  }
+
+  .season-ticket-card__button {
+    padding: 24px 42px;
+  }
+
   .events {
     padding: 101px 45px;
   }
@@ -4888,7 +4897,7 @@ button,
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px;
     column-gap: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -5157,7 +5166,7 @@ button,
     max-width: 290px;
     margin-left: auto;
     margin-right: 1px;
-    padding-top: 52px;
+    padding-top: 47px;
     padding-bottom: 0;
   }
 
@@ -5337,7 +5346,7 @@ button,
   }
 
   .season-ticket-card__button {
-    padding: 23px 43px;
+    padding: 23px 42px;
   }
 
   .events {
@@ -5645,7 +5654,7 @@ button,
   }
 
   .questions {
-    padding: 70px 0;
+    padding: 70px 0 45px;
   }
 
   .questions h2 {
@@ -5693,6 +5702,10 @@ button,
   .accordion li {
     padding: 20px 0;
     min-height: 84px;
+  }
+
+  .accordion li:first-of-type h3 {
+    margin-top: 0;
   }
 
   .accordion li:first-of-type button {

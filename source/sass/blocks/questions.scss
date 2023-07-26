@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0;
+    padding: 70px 0 45px;
   }
 }
 
@@ -20,7 +20,6 @@
   margin: 0;
   margin-bottom: 40px;
   color: $color-sapphire;
-
 
   @include vp-1199 {
     text-align: center;
@@ -69,7 +68,7 @@
   @include vp-1199 {
     flex-direction: row;
     column-gap: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     justify-content: center;
     flex-wrap: wrap;
   }
