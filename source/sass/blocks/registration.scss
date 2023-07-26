@@ -130,7 +130,7 @@
         min-width: 290px;
       }
 
-      @include hover {
+      &:hover {
         border-bottom: 1px solid rgba($color-default-white, 1);
       }
 
@@ -168,7 +168,8 @@
   &.is-invalid {
     input,
     textarea {
-      @include hover-focus {
+      &:hover,
+      &:focus {
         color: $color-torch-red-error;
         border: none;
         border-bottom: 1px solid $color-torch-red-error;
