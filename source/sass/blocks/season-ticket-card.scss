@@ -161,7 +161,8 @@
     padding: 23px 43px;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     border: 2px solid;
     color: $color-default-white;
     background-image: $torchred-to-cobalt;

@@ -2744,20 +2744,7 @@ button,
     padding: 23px 43px;
   }
 }
-@media (hover: hover) {
-  .season-ticket-card__button:hover:not(.focus-visible) {
-    border: 2px solid;
-    color: #ffffff;
-    background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-    border-image-slice: 1;
-    outline: none;
-  }
-  .season-ticket-card__button:hover:not(.focus-visible):active {
-    color: rgba(255, 255, 255, 0.5);
-  }
-}
-.season-ticket-card__button.focus-visible:focus {
+.season-ticket-card__button:hover, .season-ticket-card__button:focus {
   border: 2px solid;
   color: #ffffff;
   background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -2765,7 +2752,7 @@ button,
   border-image-slice: 1;
   outline: none;
 }
-.season-ticket-card__button.focus-visible:focus:active {
+.season-ticket-card__button:hover:active, .season-ticket-card__button:focus:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -5404,8 +5391,8 @@ button,
   bottom: 5px;
   color: #ff121f;
   opacity: 0;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .registration__custom-input.is-invalid input:hover, .registration__custom-input.is-invalid input:focus,
 .registration__custom-input.is-invalid textarea:hover,
