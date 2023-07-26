@@ -162,7 +162,7 @@
     bottom: 5px;
     color: $color-torch-red-error;
     opacity: 0;
-    transition: $trans-default;
+    transition: color $trans-default;
   }
 
   &.is-invalid {
