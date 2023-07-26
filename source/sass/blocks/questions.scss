@@ -70,6 +70,8 @@
     flex-direction: row;
     column-gap: 10px;
     margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   @include vp-767 {
@@ -84,10 +86,11 @@
   width: 100%;
 
   @include vp-1199 {
-    width: 100%;
+    width: 162px;
   }
 
   @include vp-767 {
+    min-height: 44px;
     width: 139px;
     flex-wrap: wrap;
   }
@@ -95,7 +98,7 @@
 
 .questions__button {
   width: 100%;
-  min-height: 54px;
+  min-height: inherit;
   display: block;
   font-family: $ff-roboto;
   font-weight: $fw-normal;
