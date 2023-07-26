@@ -139,11 +139,11 @@
       @include border-gradient($color-sapphire, $color-sapphire, 1px);
       opacity: 1;
     }
-  }
 
-  @include active {
-    width: 58px;
-    height: 58px;
+    &:active {
+      width: 58px;
+      height: 58px;
+    }
   }
 
   &:disabled {
