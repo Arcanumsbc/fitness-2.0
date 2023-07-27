@@ -30,9 +30,12 @@ $color-neon-blue:                   #2c39f2;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$crimson-to-cobalt:                 linear-gradient(142deg, #d10a42 15%, #0041ca 85%);
-$torchred-to-cobalt:                linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-$darkcerulean-to-venetianred:       conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$crimson-to-cobalt:                 linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+$torchred-to-cobalt:                linear-gradient(115.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$torchred-to-cobalt-play:           linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$darkcerulean-to-venetianred:       conic-gradient(from 130.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$darkcerulean-tablet:               conic-gradient(from 143.87deg at 20.83% 36.26%,#b80027 -44.69deg,#003d85 32.24deg,#b80027 310.31deg,#003d85 392.24deg);
+$darkcerulean-mobile:               conic-gradient(from 170.87deg at 34.20% 34.26%,#b80027 -44.69deg,#003d85 32.24deg,#b80027 310.31deg,#003d85 392.24deg);
 
 // Typography
 // ---------------------------------

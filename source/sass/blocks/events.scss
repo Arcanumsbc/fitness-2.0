@@ -1,36 +1,44 @@
 .events {
-  padding: 120px 103px 105px;
-  margin: 0 auto;
+  padding: 120px 0 106px;
   display: flex;
   justify-content: center;
 
   @include vp-1199 {
-    padding: 101px 45px;
+    padding: 100px 0;
   }
 
   @include vp-767 {
     padding: 70px 15px 63px;
   }
+}
 
-  @media (max-width: 610px) {
+.events__container {
+  display: flex;
+  max-width: 1600px;
+
+  @include vp-1199 {
+    flex-direction: row;
+    flex: 1 1 100%;
+  }
+
+  @include vp-767 {
     flex-direction: column;
   }
 }
 
 .events__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  min-width: 292px;
+  justify-content: center;
   background-color: $color-torch-red;
+
+
+  @include vp-1199 {
+    width: 43%;
+  }
 
   @include vp-767 {
     background-color: $color-torch-red;
-    justify-content: center;
     padding: 0;
-  }
-
-  @media (max-width: 610px) {
     width: 100%;
   }
 }
@@ -42,18 +50,17 @@
   grid-template-rows: repeat(4, min-content);
   padding: 81px 78px 80px 79px;
   margin: 0;
-  min-height: 500px;
+  flex-wrap: wrap;
+  width: 500px;
   background-color: $color-torch-red;
 
   @include vp-1199 {
-    padding: 46px 45px;
-    max-width: 292px;
-    min-height: 292px;
+    padding: 46px 44px;
   }
 
   @include vp-767 {
+    min-width: 100%;
     padding: 45px 44px 51px;
-    min-width: 292px;
   }
 }
 
@@ -74,7 +81,7 @@
   @include vp-1199 {
     font-size: $fz-xxxlbig;
     line-height: $lh-xxxbig;
-    padding: 5px 0 0 6px;
+    padding: 4px 0 0 7px;
   }
 
   @include vp-767 {
@@ -123,6 +130,7 @@
   @include vp-1199 {
     font-size: $fz-small;
     line-height: $lh-xxxsmall;
+    transform: translateX(-2px);
   }
 }
 
@@ -150,10 +158,11 @@
 
   @include vp-1199 {
     font-size: $fz-xxmedium;
-    line-height: $lh-xxsbig;
+    line-height: 35px;
+    transform: translateX(-2px);
 
     &::after {
-      top: 3px;
+      top: 2px;
     }
   }
 }
@@ -192,6 +201,7 @@
   transition: color $trans-default;
   border: 4px solid $color-default-white;
   outline: none;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-default-white;
@@ -207,13 +217,14 @@
     font-size: $fz-ssmall;
     line-height: $lh-small;
     padding: 12px 20px;
-    min-width: 202px;
+    min-width: 204px;
     border: 2px solid $color-default-white;
-    margin-top: 29px;
+    margin-top: 31px;
   }
 
   @include vp-767 {
-    margin-top: 30px;
+    margin-top: 32px;
+    min-width: 202px;
   }
 }
 
@@ -221,15 +232,15 @@
   position: relative;
   overflow: hidden;
   min-height: 500px;
-  flex: 1 1 auto;
+  flex: 1 1 100%;
 
   @include vp-1199 {
     min-height: 292px;
+    flex: 1 1 70%;
   }
 
   @include vp-767 {
-    align-self: stretch;
-    min-width: 292px;
+    min-width: 290px;
     min-height: 292px;
   }
 }

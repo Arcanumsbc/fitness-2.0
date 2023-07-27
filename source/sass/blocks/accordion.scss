@@ -42,7 +42,7 @@
   width: 100%;
 
   @include vp-1199 {
-    padding: 25px 0 26px;
+    padding: 25px 0 29px;
 
     &:first-of-type h3 {
       margin-top: 5px;
@@ -142,6 +142,7 @@
   border: 1px solid $color-sapphire;
   grid-column: 1/2;
   grid-row: 1/2;
+  cursor: pointer;
 
   @include hover-focus {
     background-color: $color-sapphire;

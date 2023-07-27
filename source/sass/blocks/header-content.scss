@@ -1,16 +1,15 @@
 .header-content {
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
 
   @include vp-1199 {
-    margin-right: 2px;
-    padding-top: 60px;
+    margin-right: 24px;
+    padding-top: 61px;
     padding-bottom: 23px;
   }
 
   @include vp-767 {
-    max-width: 290px;
-    margin-left: auto;
     margin-right: 1px;
     padding-top: 47px;
     padding-bottom: 0;
@@ -20,7 +19,6 @@
 .header-content h2 {
   margin: 0;
   padding: 0;
-  margin-right: 38px;
   margin-top: 15px;
   font-weight: $fw-semi-bold;
   font-size: $fz-xxhuge;
@@ -30,28 +28,30 @@
   text-transform: uppercase;
   text-align: right;
   color: $color-default-white;
-  -webkit-text-stroke: 2px;
+  -webkit-text-stroke: 4px;
   order: 2;
 
   @include vp-1199 {
     font-size: $fz-xxxlarge;
     line-height: $lh-xhuge;
-    margin-right: 25px;
     text-transform: none;
-    margin-top: 10px;
+    margin-top: 8px;
+    -webkit-text-stroke: 3px;
   }
 
   @include vp-767 {
+    width: 215px;
     text-align: right;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-right: 0;
+    margin-left: 50px;
   }
 }
 
 .header-content p {
   margin: 0;
-  margin-top: 96px;
-  margin-right: 88px;
+  margin-top: 98px;
+  margin-right: 50px;
   font-weight: $fw-semi-bold;
   font-size: $fz-xxxlbig;
   font-family: $ff-alumni;
@@ -65,14 +65,14 @@
 
   @include vp-1199 {
     margin-top: 0;
-    margin-right: 25px;
+    margin-right: 4px;
     font-size: $lh-xsbig;
     line-height: $lh-xbig;
   }
 
   @include vp-767 {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 6px;
     font-size: $fz-xxxlmedium;
     margin-right: 2px;
   }
@@ -80,11 +80,8 @@
 
 .header-content__button {
   display: block;
-  margin: 0;
-  margin-top: 52px;
-  margin-left: auto;
-  margin-right: 38px;
-  padding: 18px 53px;
+  margin: 50px 0 0 auto;
+  padding: 20px 55px;
   font-family: $ff-roboto;
   font-size: $fz-small;
   font-weight: $fw-bold;
@@ -98,6 +95,7 @@
   text-transform: uppercase;
   cursor: pointer;
   order: 3;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-default-white;
@@ -112,17 +110,17 @@
 
   @include vp-1199 {
     margin-top: 38px;
-    margin-right: 22px;
     font-size: $fz-small;
     line-height: $lh-xsmall;
-    padding: 18px 32px;
+    padding: 19px 31px;
+    transform: translateX(1px);
   }
 
   @include vp-767 {
-    min-width: 290px;
-    max-width: 300px;
+    width: 100%;
+    // margin-left: 125px;
     margin-top: 25px;
     margin-bottom: 58px;
-    margin-left: -1px;
+    // margin-left: -1px;
   }
 }

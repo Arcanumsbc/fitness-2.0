@@ -1,8 +1,8 @@
 .registration {
-  padding: 56px 0 51px;
+  padding: 56px 170px 51px 0;
 
   @include vp-1199 {
-    padding: 60px 0 68px;
+    padding: 60px 45px 69px;
   }
 
   @include vp-767 {
@@ -11,17 +11,17 @@
 }
 
 .registration__wrapper {
-  max-width: 600px;
+  max-width: 410px;
   margin-left: auto;
-  padding-left: 22px;
 
   @include vp-1199 {
+    padding: 0 115px 0 88px;
     margin: 0 auto;
-    padding: 0 50px;
+    min-width: 100%;
   }
 
   @include vp-767 {
-    max-width: 100%;
+    min-width: 100%;
     padding: 0 15px;
   }
 }
@@ -64,7 +64,7 @@
 
   @include vp-1199 {
     column-gap: 60px;
-    width: 472px;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -72,33 +72,13 @@
     grid-template-rows: min-content;
     column-gap: 0;
     row-gap: 23px;
-    width: 100%;
+    width: auto;
   }
 }
 
 .registration__custom-input,
 .registration__custom-textarea {
   position: relative;
-  // border: none;
-  // border-bottom: 1px solid rgba($color-default-white, 0.5);
-  // min-height: 39px;
-  // min-width: 190px;
-  // display: block;
-  // margin: 0;
-  // padding: 5px 15px 5px 0;
-  // background-color: transparent;
-  // font-family: $ff-roboto;
-  // font-weight: $fw-normal;
-  // font-size: $fz-xsmall;
-  // line-height: $lh-xxsmall;
-  // color: $color-default-white;
-  // cursor: text;
-  // outline: none;
-  // position: relative;
-
-  // @include hover {
-  //   border-bottom: 1px solid rgba($color-default-white, 1);
-  // }
 
   label {
     border: none;
@@ -123,11 +103,11 @@
       outline: none;
 
       @include vp-1199 {
-        min-width: 206px;
+        min-width: 100%;
       }
 
       @include vp-767 {
-        min-width: 290px;
+        min-width: 100%;
       }
 
       &:hover {
@@ -216,6 +196,7 @@
   letter-spacing: $ls-interium;
   color: $color-default-white;
   transform: translateX(-2px);
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-default-white;

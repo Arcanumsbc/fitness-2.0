@@ -1,7 +1,7 @@
 .season-ticket-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .season-ticket-card ul {
@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 40px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -18,6 +19,7 @@
   @include vp-1199 {
     flex-direction: column;
     row-gap: 41px;
+    min-width: 100%;
   }
 
   @include vp-767 {
@@ -28,7 +30,6 @@
 .season-ticket-card li {
   display: flex;
   flex-direction: column;
-  max-width: 360px;
   padding: 56px 69px;
   background-color: $color-default-white;
   text-align: center;
@@ -36,18 +37,17 @@
   overflow: hidden;
 
   @include vp-1199 {
-    max-width: 442px;
+    min-width: 100%;
     padding: 56px 111px;
   }
 
   @include vp-767 {
-    max-width: 290px;
-    padding: 43px 34px;
+    padding: 43px 35px;
   }
 
   @include hover-focus {
     border: 7px solid;
-    border-image-source: $torchred-to-cobalt;
+    border-image-source: $crimson-to-cobalt;
     border-image-slice: 1;
     outline: none;
   }
@@ -83,7 +83,7 @@
 }
 
 .season-ticket-card__data-price {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   margin-right: 1px;
 
   @include vp-1199 {
@@ -132,8 +132,8 @@
     z-index: -1;
     position: absolute;
     bottom: 0;
-    left: -30%;
-    transform: translateY(8%) translateX(10%);
+    left: -32%;
+    transform: translateY(11%) translateX(10%);
 
     @include vp-767 {
       font-size: $fz-shuge;
@@ -157,7 +157,7 @@
   letter-spacing: $ls-interium;
   margin: 0;
   margin-bottom: 4px;
-  padding: 23px 43px;
+  padding: 24px 43px;
   border: 2px solid $color-sapphire;
   text-transform: uppercase;
   user-select: none;

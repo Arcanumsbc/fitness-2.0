@@ -1,40 +1,51 @@
 .main-header {
   padding-top: 30px;
-  padding-bottom: 37px;
+  padding-bottom: 38px;
   background: $darkcerulean-to-venetianred;
 
   @include vp-1199 {
     padding-top: 40px;
-    padding-bottom: 69px;
+    padding-bottom: 44px;
+    background: $darkcerulean-tablet;
   }
 
   @include vp-767 {
     padding-top: 20px;
     padding-bottom: 21px;
+    background: $darkcerulean-mobile;
   }
 }
 
+.main-header__container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .main-header__wrapper {
+  position: relative;
   display: grid;
-  grid-template-columns: 134px 275px 1fr max-content;
+  grid-template-columns: min-content 277px 500px min-content;
   grid-template-rows: min-content 1fr 1fr;
-  column-gap: 25px;
-  row-gap: 2px;
-  margin: 0 auto;
+  column-gap: 37px;
+  width: 1160px;
 
   @include vp-1199 {
-    grid-template-columns: 113px 235px 1fr;
+    grid-template-columns: 113px 235px 324px;
     grid-template-rows: min-content 1fr 1fr 1fr;
-    column-gap: 2px;
+    column-gap: 0;
     row-gap: 10px;
     padding: 0 45px;
+    min-width: auto;
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr 113px 178px;
+    min-width: 100%;
+    grid-template-columns: min-content 50px 1fr min-content;
     grid-template-rows: min-content 1fr 1fr 1fr;
     column-gap: 0;
     padding: 0 15px;
+    row-gap: 7px;
   }
 }
 
@@ -48,7 +59,7 @@
   }
 
   @include vp-767 {
-    grid-column: 1/3;
+    grid-column: 1/2;
   }
 }
 
@@ -63,21 +74,22 @@
   }
 
   @include vp-767 {
-    grid-column: 3/4;
+    grid-column: 3/5;
     grid-row: 1/2;
   }
 }
 
 .main-header__content {
-  grid-column: 1/3;
+  grid-column: 2/3;
   grid-row: 2/4;
+  align-items: flex-end;
 
   @include vp-1199 {
     grid-row: 2/5;
   }
 
   @include vp-767 {
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 2/5;
   }
 }
@@ -85,6 +97,7 @@
 .main-header__options {
   grid-column: 1/2;
   grid-row: 3/4;
+  order: 1;
 
   @include vp-1199 {
     grid-column: 1/2;
@@ -92,7 +105,7 @@
   }
 
   @include vp-767 {
-    grid-column: 2/3;
+    grid-column: 1/3;
     grid-row: 3/4;
   }
 }
@@ -100,7 +113,6 @@
 .main-header__hero {
   grid-column: 3/4;
   grid-row: 2/4;
-  justify-self: stretch;
 
   @include vp-1199 {
     grid-column: 3/4;

@@ -12,12 +12,11 @@
 
 .intro__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
   min-width: 320px;
   max-width: 1366px;
-  padding: 0 103px;
 
   @include vp-1199 {
     flex-direction: column;
@@ -34,7 +33,7 @@
 
 .intro__content {
   flex: 1 1;
-  margin-top: 40px;
+  margin-top: 39px;
   margin-right: 85px;
   margin-left: 60px;
 
