@@ -5,6 +5,7 @@ import {initCoachesSlider, initFeedbackSlider} from './vendor/init-slider';
 import {initAccordions} from './vendor/init-accordion';
 import {initTabs} from './vendor/init-tabs';
 import {createIframe} from './vendor/iframe';
+import {initSmoothNavigation} from './vendor/smooth';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initFeedbackSlider();
   initAccordions();
   initTabs();
+  initSmoothNavigation();
 
 
   // Modules
