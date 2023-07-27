@@ -1529,10 +1529,10 @@ button,
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: -webkit-min-content 277px 500px 1fr;
-  -ms-grid-columns: min-content 277px 500px 1fr;
-  grid-template-columns: -webkit-min-content 277px 500px 1fr;
-  grid-template-columns: min-content 277px 500px 1fr;
+  -ms-grid-columns: -webkit-min-content 277px 500px 155px;
+  -ms-grid-columns: min-content 277px 500px 155px;
+  grid-template-columns: -webkit-min-content 277px 500px 155px;
+  grid-template-columns: min-content 277px 500px 155px;
   -ms-grid-rows: -webkit-min-content 1fr 1fr;
   -ms-grid-rows: min-content 1fr 1fr;
   grid-template-rows: -webkit-min-content 1fr 1fr;
@@ -1555,9 +1555,9 @@ button,
 }
 
 .main-header__contact {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
