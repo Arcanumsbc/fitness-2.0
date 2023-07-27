@@ -5285,6 +5285,10 @@ button,
     background: conic-gradient(from 170.87deg at 34.2% 34.26%, #b80027 -44.69deg, #003d85 32.24deg, #b80027 310.31deg, #003d85 392.24deg);
   }
 
+  .main-header__container {
+    padding: 0;
+  }
+
   .main-header__wrapper {
     min-width: 100%;
     -ms-grid-columns: -webkit-min-content 50px 1fr -webkit-min-content;
