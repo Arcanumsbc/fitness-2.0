@@ -5,7 +5,7 @@
 .media__photo {
   position: relative;
   width: 100%;
-  min-height: 401px;
+  min-height: 403px;
   overflow: hidden;
 
   @include vp-1199 {
@@ -45,15 +45,13 @@
 
   @include vp-1199 {
     position: relative;
-    transform: translateX(-4%) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+    padding: 0 206px;
     bottom: 0;
-    left: 4px;
-    padding: 0 230px;
-    margin: 0 auto;
+    left: 0;
   }
 
   @include vp-767 {
-    position: relative;
     left: 0;
     padding: 0;
     transform: none;
@@ -63,30 +61,27 @@
 .media__wrapper {
   position: relative;
   cursor: pointer;
-  width: 364px;
-  height: 228px;
+  min-width: 364px;
+  min-height: 228px;
   left: -63px;
-  top: 2px;
+  top: -1px;
 
   @include vp-1199 {
-    min-width: 266px;
-    width: auto;
-    // max-width: 100%;
-    min-height: 167px;
-    height: 100%;
-    max-height: 228px;
     left: 0;
     top: 0;
+    min-width: 266px;
+    width: 100%;
+    min-height: 167px;
+    height: 0;
+    padding-bottom: 40%;
     margin: 0 auto;
   }
 
   @include vp-767 {
     min-width: 320px;
-    width: auto;
-    max-width: 100%;
-    min-height: 167px;
-    max-height: 100%;
-    // margin: 0 auto;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
   }
 }
 
@@ -100,7 +95,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba($color-dark-cerulean, 0.5);
-    top: -1px;
+    top: 0;
     left: 0;
   }
 }
@@ -140,7 +135,7 @@
   background: $torchred-to-cobalt-play;
   outline: none;
 
-  @include hover {
+  @include hover-focus {
     background: $color-default-white;
     outline: none;
 

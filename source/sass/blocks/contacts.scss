@@ -1,9 +1,11 @@
 .contacts {
+  display: flex;
+  justify-content: flex-start;
   padding: 49px 0 45px 120px;
   background-color: $color-default-white;
 
   @include vp-1199 {
-    padding: 60px 0 45px;
+    padding: 62px 84px 45px;
   }
 
   @include vp-767 {
@@ -12,21 +14,21 @@
 }
 
 .contacts__wrapper {
-  max-width: 600px;
+  max-width: 635px;
   margin-right: auto;
-  padding-right: 56px;
+  min-width: 400px;
   display: grid;
   grid-template-columns: 235px 165px;
   grid-template-rows: min-content min-content;
   column-gap: 57px;
 
   @include vp-1199 {
-    margin: 0 auto;
+    column-gap: 80px;
     padding: 0 48px;
-    column-gap: 78px;
   }
 
   @include vp-767 {
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     column-gap: 0;
@@ -51,7 +53,7 @@
   @include vp-1199 {
     font-size: $fz-xxbig;
     line-height: $lh-slarge;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {
@@ -111,6 +113,7 @@
     font-size: $fz-medium;
     line-height: $lh-xsbig;
     padding-left: 0;
+    margin-bottom: 3px;
   }
 
   @include vp-767 {
@@ -133,6 +136,7 @@
     font-size: $fz-xxxsmall;
     line-height: $lh-xxlxmedium;
     padding-left: 0;
+    margin-bottom: 18px;
   }
 
   @include vp-767 {

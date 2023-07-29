@@ -1,15 +1,16 @@
 .header-contact {
   padding-right: 1px;
-  transform: translateX(4px);
+  transform: translateX(-2px);
 
   @include vp-1199 {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     display: flex;
     flex-wrap: wrap;
     padding-right: 0;
   }
 
   @include vp-767 {
+    min-width: 100%;
     padding-right: 1px;
     padding-left: 0;
     transform: translateY(0);

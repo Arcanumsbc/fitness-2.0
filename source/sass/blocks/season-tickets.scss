@@ -4,7 +4,7 @@
   padding: 120px 0;
 
   @include vp-1199 {
-    padding: 100px 118px;
+    padding: 101px 118px;
   }
 
   @include vp-767 {
@@ -15,7 +15,7 @@
 .season-tickets__container {
   display: flex;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
   flex-direction: column;
 
   @include vp-1199 {
@@ -67,7 +67,7 @@
   letter-spacing: $ls-medium;
   color: $color-sapphire;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   justify-content: center;
 
   @include vp-1199 {
@@ -146,7 +146,7 @@
   @include vp-1199 {
     font-size: $fz-xxxsmall;
     line-height: $lh-xxlxmedium;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
 
   @include vp-767 {
