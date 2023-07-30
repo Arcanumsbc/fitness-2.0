@@ -37,23 +37,28 @@
           <div class="main-header__contact header-contact">
             <a href="tel:88005555555" aria-label="Позвонить нам">8-800-555-55-55</a>
           </div>
-          <div class="main-header__content header-content">
-            <h2>Фитнес центр</h2>
-            <p>омск</p>
+
+          <div class="main-header__block">
+            <div class="main-header__content header-content">
+              <h2>Фитнес центр</h2>
+              <p>омск</p>
+            </div>
+
+            <div class="main-header__options header-options">
+              <ul>
+                <li>
+                  <a href="#intro">Тренажёрный зал</a>
+                </li>
+                <li>
+                  <a href="#intro">Групповые занятия</a>
+                </li>
+                <li>
+                  <a href="#intro">Кардио-зона</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="main-header__options header-options">
-            <ul>
-              <li>
-                <a href="#intro">Тренажёрный зал</a>
-              </li>
-              <li>
-                <a href="#intro">Групповые занятия</a>
-              </li>
-              <li>
-                <a href="#intro">Кардио-зона</a>
-              </li>
-            </ul>
-          </div>
+
           <div class="main-header__hero header-hero">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
@@ -61,13 +66,13 @@
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="./img/hero/hero-desk.png 1x, ./img/hero/hero-desk@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/hero/hero-tablet.png 1x, ./img/hero/hero-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/hero/hero-tablet.png 1x, ./img/hero/hero-tablet@2x.png 2x">
               <img src="./img/hero/hero-desk.png" width="500" height="556" loading="lazy" alt="Лучший спортсмен">
             </picture>
           </div>
-          <div class="main-header__button">
-            <a href="#season-tickets">Купить абонемент</a>
+
+          <div class="main-header__button header-button">
+            <a class="header-button__button" href="#season-tickets">Купить абонемент</a>
           </div>
         </div>
       </div>
@@ -1033,53 +1038,57 @@
       <section class="double-block">
         <h2 class="visually-hidden">Форма записи на беслплатное занятие и наши контакты</h2>
         <section class="double-block__registration registration">
-          <div class="registration__wrapper">
-            <h2>Бесплатное занятие</h2>
-            <div class="registration__form" data-form-validate="data-form-validate" data-callback="base">
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <fieldset>
-                  <div class="registration__custom-input" data-validate-type="text" data-limitation="name"
-                    data-message-base="Поле обязательно к заполнению" data-message-extra="Ошибка заполнения поля"
-                    data-required="data-required">
-                    <label for="user-name"><span class="visually-hidden">Введите ваше имя</span>
-                      <input id="user-name" type="text" name="userName" placeholder="Имя">
-                    </label>
-                  </div>
-                  <div class="registration__custom-input" data-validate-type="phone"
-                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                    data-message-extra="Ошибка заполнения поля" data-message-success="Поле заполнено верно"
-                    data-required="data-required">
-                    <label for="user-phone"><span class="visually-hidden">Введите ваше телефон</span>
-                      <input id="user-phone" type="tel" name="userPhone" placeholder="Телефон" pattern="[0-9]{1,20}">
-                    </label>
-                  </div>
-                  <button type="submit">Отправить</button>
-                </fieldset>
-              </form>
+          <div class="registration__container">
+            <div class="registration__wrapper">
+              <h2>Бесплатное занятие</h2>
+              <div class="registration__form" data-form-validate="data-form-validate" data-callback="base">
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset>
+                    <div class="registration__custom-input" data-validate-type="text" data-limitation="name"
+                      data-message-base="Поле обязательно к заполнению" data-message-extra="Ошибка заполнения поля"
+                      data-required="data-required">
+                      <label for="user-name"><span class="visually-hidden">Введите ваше имя</span>
+                        <input id="user-name" type="text" name="userName" placeholder="Имя">
+                      </label>
+                    </div>
+                    <div class="registration__custom-input" data-validate-type="phone"
+                      data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Ошибка заполнения поля" data-message-success="Поле заполнено верно"
+                      data-required="data-required">
+                      <label for="user-phone"><span class="visually-hidden">Введите ваше телефон</span>
+                        <input id="user-phone" type="tel" name="userPhone" placeholder="Телефон" pattern="[0-9]{1,20}">
+                      </label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
         </section>
         <section class="double-block__contacts contacts">
-          <div class="contacts__wrapper">
-            <h2>Контакты</h2>
-            <dl class="contacts__list contacts__list--modif">
-              <dt>Адрес:</dt>
-              <dd>
-                <a href="#" target="_blank" rel="noopener">г. Омск, ул. 60 лет Октября, 7</a>
-              </dd>
-              <dt>График работы:</dt>
-              <dd>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</dd>
-            </dl>
-            <dl class="contacts__list">
-              <dt>Телефон:</dt>
-              <dd>
-                <a href="tel:88005555555" aria-label="Наш номер">8-800-555-55-55</a>
-              </dd>
-              <dt>Email:</dt>
-              <dd>
-                <a href="mailto:omsk@supergym.ru" aria-label="Наша почта">omsk@supergym.ru</a>
-              </dd>
-            </dl>
+          <div class="contacts__container">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <dl class="contacts__list contacts__list--modif">
+                <dt>Адрес:</dt>
+                <dd>
+                  <a href="#" target="_blank" rel="noopener">г. Омск, ул. 60 лет Октября, 7</a>
+                </dd>
+                <dt>График работы:</dt>
+                <dd>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</dd>
+              </dl>
+              <dl class="contacts__list">
+                <dt>Телефон:</dt>
+                <dd>
+                  <a href="tel:88005555555" aria-label="Наш номер">8-800-555-55-55</a>
+                </dd>
+                <dt>Email:</dt>
+                <dd>
+                  <a href="mailto:omsk@supergym.ru" aria-label="Наша почта">omsk@supergym.ru</a>
+                </dd>
+              </dl>
+            </div>
           </div>
         </section>
       </section>

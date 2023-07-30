@@ -2,6 +2,7 @@
   display: flex;
   background-color: $color-sapphire;
   border-top: 1px solid $color-sapphire;
+  position: relative;
 
   @include vp-1199 {
     flex-direction: column;
@@ -12,6 +13,7 @@
 .double-block__registration,
 .double-block__contacts {
   flex: 1 1 50%;
+  position: relative;
 
   @include vp-1199 {
     flex: 1 1 100%;

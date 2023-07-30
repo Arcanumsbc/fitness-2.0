@@ -3,15 +3,17 @@
   position: relative;
   width: 500px;
   height: 556px;
-  transform: translateX(-26px) translateY(2px);
+  margin-left: 40px;
+  transform: translateX(-4%);
 
   @include vp-1199 {
     position: relative;
     width: 324px;
     height: 390px;
     margin-top: 25px;
+    margin-left: 0;
     padding: 0;
-    transform: translateX(-6px);
+    transform: translateX(-9px) translateY(-2px);
   }
 
   @include vp-767 {
@@ -21,8 +23,8 @@
 
 .header-hero img {
   position: absolute;
-  top: -13px;
-  left: 16px;
+  top: -11px;
+  left: 0;
   background-color: transparent;
   display: block;
   width: 100%;

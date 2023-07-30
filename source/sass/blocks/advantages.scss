@@ -1,5 +1,5 @@
 .advantages {
-  padding: 105px 0 102px;
+  padding: 106px 0 102px;
   margin: 0 auto;
   background-color: $color-ghost-white;
 
@@ -11,15 +11,6 @@
     padding: 64px 0 48px;
   }
 }
-
-// .advantages__wrapper {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   padding: 0 163px;
-//   margin: 0 auto;
-
-// }
 
 .advantages h2 {
   font-family: $ff-alumni;
@@ -216,7 +207,7 @@
   }
 
   @include vp-767 {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
 }
 
@@ -236,6 +227,7 @@
   @include vp-767 {
     margin-top: 0;
     padding: 0 12px;
+    transform: translateY(2px);
   }
 }
 
@@ -266,7 +258,7 @@
   }
 
   @include vp-767 {
-    margin-top: 16px;
+    margin-top: 15px;
     margin-bottom: 25px;
     order: 2;
     min-width: 100%;
