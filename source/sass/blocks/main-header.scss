@@ -95,11 +95,11 @@
   }
 
   @include vp-767 {
-  display: flex;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  justify-content: center;
-  min-width: 290px;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: center;
+    min-width: 290px;
   }
 }
 

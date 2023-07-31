@@ -64,7 +64,7 @@
   }
 }
 
-.stocks__list .stocks__item-big {
+.stocks__list .stocks__big-item {
   column-gap: 40px;
 
   @include vp-1199 {
@@ -80,6 +80,8 @@
 }
 
 .stocks__item-big {
+  margin: 0;
+  padding: 0;
   min-height: 462px;
   height: auto;
   width: 50%;
@@ -95,6 +97,8 @@
   flex-direction: column;
   row-gap: 40px;
   width: 50%;
+  margin: 0;
+  padding: 0;
 
   @include vp-1199 {
     min-width: 678px;
@@ -147,7 +151,6 @@
   border-image-source: $crimson-to-cobalt;
   border-image-slice: 1;
   min-height: 211px;
-
 }
 
 .stocks__item h3 {
@@ -252,14 +255,6 @@
   @include vp-1199 {
     column-gap: 0;
     margin-bottom: 30px;
-
-    // &:first-of-type {
-    //   margin-bottom: 40px;
-    // }
-
-    // &:last-of-type {
-    //   margin-bottom: 0;
-    // }
   }
 
   @include vp-767 {
