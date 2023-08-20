@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -18,11 +18,37 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/main-header";
+@import "blocks/header-logo";
+@import "blocks/header-contact";
+@import "blocks/header-content";
+@import "blocks/header-options";
+@import "blocks/header-hero";
+@import "blocks/header-button";
+@import "blocks/intro";
+@import "blocks/content";
+@import "blocks/media";
+@import "blocks/season-tickets";
+@import "blocks/season-ticket-card";
+@import "blocks/data-tabs";
+@import "blocks/events";
+@import "blocks/coaches";
+@import "blocks/advantages";
+@import "blocks/stocks";
+@import "blocks/questions";
+@import "blocks/accordion";
+@import "blocks/data-accordion";
+@import "blocks/feedback";
+@import "blocks/double-block";
+@import "blocks/registration";
+@import "blocks/contacts";
+@import "blocks/main-footer";
+@import "blocks/footer-social";
 @import "blocks/btn";
 @import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+// @import "blocks/custom-input";
+// @import "blocks/custom-toggle";
+// @import "blocks/custom-select";
 
 // ---------------------------------
 

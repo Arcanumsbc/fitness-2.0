@@ -1,0 +1,72 @@
+.footer-social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  row-gap: 10px;
+  justify-content: flex-start;
+  max-width: 240px;
+  flex-wrap: wrap;
+  column-gap: 11px;
+
+  @include vp-767 {
+    justify-content: flex-start;
+  }
+}
+
+.footer-social__item a {
+  position: relative;
+  display: block;
+  background-color: $color-default-white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    background: $color-egyptian-blue;
+    fill: $color-default-white;
+
+    &:active {
+      background-color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @include vp-767 {
+    padding-top: 7px;
+  }
+}
+
+.footer-social__item svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  fill: $color-black-russian;
+}
+
+.footer-social__item a:hover svg,
+.footer-social__item a:focus svg,
+.footer-social__item a:active svg {
+  fill: $color-default-white;
+}
+
+.footer-social__item--vk svg {
+  width: 12px;
+  height: 7px;
+}
+
+.footer-social__item--ok svg {
+  width: 9px;
+  height: 16px;
+}
+
+.footer-social__item--reddit svg {
+  width: 14px;
+  height: 14px;
+}
