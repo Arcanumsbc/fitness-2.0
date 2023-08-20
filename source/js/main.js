@@ -1,39 +1,17 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initCoachesSlider, initFeedbackSlider} from './vendor/init-slider';
-import {initAccordions} from './vendor/init-accordion';
-import {initTabs} from './vendor/init-tabs';
-import {createIframe} from './vendor/iframe';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+
   // Utils
   // ---------------------------------
 
   iosVhFix();
-  initCoachesSlider();
-  initFeedbackSlider();
-  initAccordions();
-  initTabs();
 
   // Modules
-
-  const anchors = document.querySelectorAll('a[href*="#"]');
-
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const blockID = anchor.getAttribute('href').substr(1);
-
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    });
-  }
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -43,7 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    createIframe();
   });
 });
 
