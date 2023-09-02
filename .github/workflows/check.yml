@@ -1,4 +1,4 @@
-name: Deploy to GitHub-Pages
+name: Fitness-2.0 GitHub-Pages
 
 on:
   push:
