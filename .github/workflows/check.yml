@@ -1,4 +1,4 @@
-name: Fitness-2.0 GitHub-Pages
+name: pages-build-deployment
 
 on:
   push:
