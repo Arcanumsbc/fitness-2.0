@@ -33,6 +33,6 @@ jobs:
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: AZWH427IF3F5UZIVGIVUNTTE6OVVY
+          token: ${{ secrets.GITHUB_TOKEN }}
           folder: ./build
           branch: gh-pages
